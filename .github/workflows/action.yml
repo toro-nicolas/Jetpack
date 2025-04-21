@@ -1,0 +1,42 @@
+name: jetpack
+
+on: [push, pull_request]
+
+env:
+  EXECUTABLE: jetpack_client,jetpack_server
+
+jobs:
+  check_coding_style:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/epitech/coding-style-checker:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Launch coding style checker
+        run: check.sh $(pwd) $(pwd)
+      - name: Check coding style
+        run:
+          cat coding-style-reports.log;
+          .github/workflows/display_coding_style
+
+  check_program:
+    runs-on: ubuntu-latest
+    container:
+      image: epitechcontent/epitest-docker
+    needs: check_coding_style
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Check SFML version
+        run: pkg-config --modversion sfml-graphics
+      - name: Launch "make"
+        run: make
+        timeout-minutes: 2
+      - name: Launch "make clean"
+        run: make clean
+      - name: Check program compilation
+        run: .github/workflows/check_program_compilation ${{ env.EXECUTABLE }}
+      - name: Launch "make tests_run"
+        run: make tests_run
+        timeout-minutes: 2

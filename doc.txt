@@ -1,0 +1,92 @@
+Jetpack Protocol (Client/Server) Documentation
+
+Each server response follows the format:
+    ID_cmd return_code DATA
+
+Where:
+- ID_cmd: Command identifier sent by the client,
+corresponding to std::to_string of the following enum:
+	enum CmdID {
+        CMD_ID_NOT_FOUND = -1,
+		CMD_ID_ID = 0,
+		CMD_MAP_ID = 1,
+		CMD_PSEUDO_ID = 2,
+		CMD_MOVE_ID = 3,
+		CMD_CLIENTS_NB_ID = 4,
+		CMD_CLIENTS_STATS_ID = 5,
+		CMD_CLIENTS_POSITIONS_ID = 6,
+	};
+
+
+Command-Reply Sequences (Mandatory part)
+
+    Game Load
+        MAP ->
+            <- CMD_MAP_ID
+            <- 201 / 501
+            <- Raw map data
+        ID ->
+            <- CMD_ID_ID
+            <- 201 / 501
+            <- Client ID assigned by server
+
+    Clients Information
+        CLIENTS_NB ->
+            <- CMD_CLIENTS_NB_ID
+            <- 202 / 502
+            <- Number of clients (e.g., 3)
+
+        CLIENTS_POSITIONS ->
+            <- CMD_CLIENTS_POSITIONS_ID
+            <- 202 / 502
+            <- id1:x,y|id2:x,y|...
+
+        CLIENTS_STATS ->
+            <- CMD_CLIENTS_STATUS_ID
+            <- 202 / 502
+            <- id1:pseudo,0,34|id2:pseudo,1,12|...
+               Where: pseudo = client name,
+                      0/1 = dead/alive,
+                      score = client score
+
+    Personal Client Commands
+        PSEUDO MyPseudo ->
+            <- CMD_PSEUDO_ID
+            <- 203 / 503
+            <- MyPseudo (new pseudo registered on server)
+
+        MOVE direction ->
+            <- CMD_MOVE_ID
+            <- 203 / 503
+            <- OK or error message
+            Note: direction is either UP or DOWN
+
+-------------------------------------------------------------------------------
+
+Jetpack Map Documentation
+
+Overview:
+The game map is a grid-based layout composed of rows and columns of characters.
+It can have an infinite size,
+but each row must have the same number of characters.
+The client will automatically scale according to the height of the map.
+The taller the map, the smaller the player will appear.
+
+Supported Characters:
+    c   => Coin (collectible)
+    e   => Trap (danger)
+    _   => Empty space
+
+Note:
+Any other character is not supported and will be interpreted as an empty space.
+
+Example (maps/basic.txt):
+
+    ___c____
+    __e_c___
+    ___e____
+
+- The player can move around the grid.
+- Coins (c) can be collected.
+- Traps (e) should be avoided.
+- Empty spaces (_) are traversable tiles.

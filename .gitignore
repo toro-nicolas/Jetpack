@@ -1,0 +1,40 @@
+# The files indicated will not be pushed
+#.gitignore
+
+# Temporary files
+./temp
+./tmp
+*~
+'#*#'
+.#*
+
+# Coding-style-checker files
+*.log
+
+# C compiled files or output files and lib
+*.o
+*.a
+a.out
+myftp
+jetpack_client
+jetpack_server
+build
+cmake-build-debug
+
+# Unit_tests files
+*.gcda
+*.gcno
+*.gcov
+unit_tests
+
+# Valgrind files
+vgcore.*
+
+# Software folders
+.vscode
+.idea
+.cache
+compile_commands.json
+
+# Backup files
+*.old
