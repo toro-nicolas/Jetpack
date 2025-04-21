@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#jetpack">Jetpack</a>
+<ul>
+<li><a href="#table-of-contents-📑">Table of contents 📑</a></li>
+<li><a href="#description-📝">Description 📝</a></li>
+<li><a href="#usage-⚔️">Usage ⚔️</a></li>
+<li><a href="#result-🚩">Result 🚩</a></li>
+<li><a href="#compilation-🛠️">Compilation 🛠️</a></li>
+<li><a href="#documentation-📚">Documentation 📚</a></li>
+<li><a href="#code-mandatory-📦">Code mandatory 📦</a></li>
+<li><a href="#contributors-👥">Contributors 👥</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="jetpack">Jetpack</h1>
+<p><img src="https://toro-nicolas.github.io/Jetpack/preview2.png" alt="Jetpack"></p>
+<h2 id="table-of-contents-📑">Table of contents 📑</h2>
+<ul>
+<li><a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#description-">Description</a></li>
+<li><a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#usage-%EF%B8%8F">Usage</a></li>
+<li><a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#result-">Result</a></li>
+<li><a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#compilation-%EF%B8%8F">Compilation</a></li>
+<li><a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#documentation-">Documentation</a></li>
+<li><a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#code-mandatory-">Code mandatory</a></li>
+<li><a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#contributors-">Contributors</a></li>
+</ul>
+<h2 id="description-📝">Description 📝</h2>
+<p>The <strong>Jetpack</strong> is a project carried out by <strong>groups of 3</strong> (see <a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#contributors-">Contributors</a>, during our <strong>2nd year</strong> in <a href="https://www.epitech.eu/"><strong>EPITECH</strong></a> Grand Ecole program.<br>
+Its purpose is to recreate in <a href="https://en.wikipedia.org/wiki/C%2B%2B"><strong>C++</strong></a> a <a href="https://en.wikipedia.org/wiki/Jetpack_Joyride"><strong>Jetpack Joyride game</strong></a> with a <strong>multiplayer</strong> mode.<br>
+We had to create a <strong>server</strong> and a <strong>client</strong> that communicate with each other using the <strong>TCP protocol</strong>.<br>
+The game is a <strong>side-scrolling</strong> runner where the player controls a character that automatically moves forward.<br>
+The player can control the character’s vertical position by pressing space key to make it fly and releasing it to let it fall.<br>
+The goal is to collect coins while avoiding obstacles.</p>
+<h2 id="usage-⚔️">Usage ⚔️</h2>
+<p>You can run Jetpack server like this :</p>
+<pre class=" language-sh"><code class="prism  language-sh">./jetpack_server -p [port] -m [map]  
+</code></pre>
+<p>For more information, please see the help section.</p>
+<pre class=" language-sh"><code class="prism  language-sh">&gt; ./jetpack_server --help  
+USAGE: ./jetpack_server -p &lt;port&gt; -m &lt;map&gt; [-d]  
+  
+DESCRIPTION:  
+ -p &lt;port&gt;       The port number on which the server socket listens  
+        -m &lt;map&gt;        The path of the map file  
+        -d              Enable debug mode  
+        --help          Display this help message  
+  
+CREDITS:  
+ Made by Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO  
+        EPITECH Nice 2025  
+</code></pre>
+<p>You can run Jetpack client like this :</p>
+<pre class=" language-sh"><code class="prism  language-sh">./jetpack_client -h [host] -p [port]  
+</code></pre>
+<p>For more information, please see the help section.</p>
+<pre class=" language-sh"><code class="prism  language-sh">&gt; ./jetpack_client --help  
+USAGE: ./jetpack_client -h &lt;ip&gt; -p &lt;port&gt; [-d]  
+  
+DESCRIPTION:  
+ -h &lt;ip&gt; The server IP address  
+        -p &lt;port&gt;       The port number on which the server socket listens  
+        -d              Enable debug mode  
+        --help          Display this help message  
+  
+CREDITS:  
+ Made by Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO  
+        EPITECH Nice 2025  
+</code></pre>
+<h2 id="result-🚩">Result 🚩</h2>
+<p>The result of this project is a <strong>almost perfect Jetpack Joyride game in multiplayer</strong>.<br>
+If you discover a <strong>problem</strong> or an <strong>error</strong>, don’t hesitate to <strong>create an issue</strong> and <strong>report it</strong> to us as soon as possible.</p>
+<h3 id="my.epitech.eu-result"><a href="http://my.epitech.eu">my.epitech.eu</a> result</h3>
+
+<table>
+<thead>
+<tr>
+<th>Test name</th>
+<th align="center">Result</th>
+<th align="center">Crash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Server</td>
+<td align="center">OK</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Client</td>
+<td align="center">OK</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Minimal functions client (write and poll)</td>
+<td align="center">OK</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Minimal functions server (write and poll)</td>
+<td align="center">OK</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td align="center">OK</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td><strong>Results</strong></td>
+<td align="center"><strong>100%</strong></td>
+<td align="center"><strong>No</strong></td>
+</tr>
+</tbody>
+</table><h3 id="defense">Defense</h3>
+<p>TODO</p>
+<h2 id="compilation-🛠️">Compilation 🛠️</h2>
+<p>This project is compiled with <strong>CMake</strong> and <strong>Makefile</strong>.<br>
+This project use <strong>C++20</strong> standard, <strong>CMake 3.20</strong> or higher and <strong>SFML 2.5.1</strong>.</p>
+<p>You can compile the project with this command :</p>
+<ul>
+<li>via CMake and Makefile :</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">cmake -B build -S . &amp;&amp; make -s -C build -j  
+</code></pre>
+<ul>
+<li>via only Makefile :</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">make  
+</code></pre>
+<p>If you want to debug the program, you can compile the project with this :</p>
+<ul>
+<li>via CMake and Makefile :</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">cmake -B build -S . &amp;&amp; make debug -s -C build -j  
+</code></pre>
+<ul>
+<li>via only Makefile :</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">make debug   
+</code></pre>
+<p>If you want clean the project, you can run this command :</p>
+<ul>
+<li>via CMake and Makefile :</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">cmake -B build -S . &amp;&amp; make fclean -s -C build -j  
+</code></pre>
+<ul>
+<li>via only Makefile :</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">make fclean  
+</code></pre>
+<p>You can clean and compile the project with the rules <code>re</code> and for debugging <code>re_debug</code></p>
+<h2 id="documentation-📚">Documentation 📚</h2>
+<p>The requested documentation for EPITECH is accessible <a href="https://toro-nicolas.github.io/Jetpack/doc.txt">here</a>.<br>
+The protocol documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/protocol_documentation_en.md">here</a>.<br>
+The map documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/map_documentation.md">here</a>.<br>
+The code documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/html/">here</a>.</p>
+<p>You can generate the documentation with this command :</p>
+<ul>
+<li>via CMake and Makefile:</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">cmake -B build -S . &amp;&amp; make doc -s -C build -j  
+</code></pre>
+<ul>
+<li>via only Makefile:</li>
+</ul>
+<pre class=" language-sh"><code class="prism  language-sh">make doc  
+</code></pre>
+<p>You need multiple package for generate them :</p>
+<ul>
+<li>doxygen</li>
+<li>doxygen-latex</li>
+<li>doxygen-doxywizard</li>
+<li>graphviz</li>
+</ul>
+<h2 id="code-mandatory-📦">Code mandatory 📦</h2>
+<ul>
+<li>You’ll need to create a branch where you’ll push your code. Once you’ve completed your tasks on this branch, we’ll work together to merge it and check that everything works.</li>
+<li>Every function you add must be code-style and documented.</li>
+<li>If the github actions don’t succeed, then ask yourself some questions</li>
+<li>Each commit will contain <code>[+]</code> or <code>[-]</code> or <code>[~]</code> followed by a message
+<ul>
+<li><code>[+]</code> : Add feature</li>
+<li><code>[-]</code> : Delete feature</li>
+<li><code>[~]</code> : Edit feature</li>
+</ul>
+</li>
+</ul>
+<p><strong>Of course, in exceptional cases, we may depart from these rules.</strong></p>
+<h2 id="contributors-👥">Contributors 👥</h2>
+<p>For this project, we were a group of <strong>3 people</strong>. Here are the people in the group:</p>
+<ul>
+<li><a href="https://github.com/ItsKarmaOff">Christophe VANDEVOIR</a> : also published the <a href="https://github.com/ItsKarmaOff/Jetpack">Jetpack</a></li>
+<li><a href="https://github.com/guilec06">Guillaume LECOCQ</a></li>
+<li><a href="https://github.com/toro-nicolas">Nicolas TORO</a> : also published the <a href="https://github.com/toro-nicolas/Jetpack">Jetpack</a></li>
+</ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
