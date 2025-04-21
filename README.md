@@ -15,7 +15,7 @@
 ## Description 📝
 The **Jetpack** is a project carried out by **groups of 3** (see [Contributors](https://github.com/toro-nicolas/Jetpack/blob/main/README.md#contributors-), during our **2nd year** in [**EPITECH**](https://www.epitech.eu/) Grand Ecole program.  
 Its purpose is to recreate in [**C++**](https://en.wikipedia.org/wiki/C%2B%2B) a [**Jetpack Joyride game**](https://en.wikipedia.org/wiki/Jetpack_Joyride) with a **multiplayer** mode.  
-We had to create a **server** and a **client** that communicate with each other using the **TCP protocol**.
+We had to create a **server** and a **client** that communicate with each other using the **TCP protocol**.  
 The game is a **side-scrolling** runner where the player controls a character that automatically moves forward.  
 The player can control the character's vertical position by pressing space key to make it fly and releasing it to let it fall.  
 The goal is to collect coins while avoiding obstacles.  
@@ -83,35 +83,35 @@ TODO
 
 
 ## Compilation 🛠️
-This project is compiled with **CMake** and **Makefile**.
-This project use **C++20** standard, **CMake 3.20** or higher and **SFML 2.5.1**.
+This project is compiled with **CMake** and **Makefile**.  
+This project use **C++20** standard, **CMake 3.20** or higher and **SFML 2.5.1**.  
 
 You can compile the project with this command :
-- via CMake and Makefile:
+- via CMake and Makefile :
 ```sh
 cmake -B build -S . && make -s -C build -j
 ```
-- via only Makefile:
+- via only Makefile :
 ```sh
 make
 ```
 
 If you want to debug the program, you can compile the project with this :
-- via CMake and Makefile:
+- via CMake and Makefile :
 ```sh
 cmake -B build -S . && make debug -s -C build -j
 ```
-- via only Makefile:
+- via only Makefile :
 ```sh
 make debug 
 ```
 
 If you want clean the project, you can run this command :
-- via CMake and Makefile:
+- via CMake and Makefile :
 ```sh
 cmake -B build -S . && make fclean -s -C build -j
 ```
-- via only Makefile:
+- via only Makefile :
 ```sh
 make fclean
 ```
@@ -120,10 +120,10 @@ You can clean and compile the project with the rules ```re``` and for debugging 
 
 
 ## Documentation 📚
-The requested documentation for EPITECH is accessible [here](https://toro-nicolas.github.io/Jetpack/doc.txt).
-The protocol documentation is accessible [here](https://toro-nicolas.github.io/Jetpack/protocol_documentation_en.md).
-The map documentation is accessible [here](https://toro-nicolas.github.io/Jetpack/map_documentation.md).
-The code documentation is accessible [here](https://toro-nicolas.github.io/Jetpack/html/).
+The requested documentation for EPITECH is accessible [here](https://toro-nicolas.github.io/Jetpack/doc.txt).  
+The protocol documentation is accessible [here](https://toro-nicolas.github.io/Jetpack/protocol_documentation_en.md).  
+The map documentation is accessible [here](https://toro-nicolas.github.io/Jetpack/map_documentation.md).  
+The code documentation is accessible [here](https://toro-nicolas.github.io/Jetpack/html/).  
 
 You can generate the documentation with this command :
 - via CMake and Makefile:

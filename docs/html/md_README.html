@@ -115,7 +115,8 @@ Table of contents 📑</h1>
 Description 📝</h1>
 <p>The <b>Jetpack</b> is a project carried out by <b>groups of 3</b> (see <a href="https://github.com/toro-nicolas/Jetpack/blob/main/README.md#contributors-">Contributors</a>, during our <b>2nd year</b> in <a href="https://www.epitech.eu/"><b>EPITECH</b></a> Grand Ecole program. <br  />
  Its purpose is to recreate in <a href="https://en.wikipedia.org/wiki/C%2B%2B"><b>C++</b></a> a <a href="https://en.wikipedia.org/wiki/Jetpack_Joyride"><b>Jetpack Joyride game</b></a> with a <b>multiplayer</b> mode. <br  />
- We had to create a <b>server</b> and a <b>client</b> that communicate with each other using the <b>TCP protocol</b>. The game is a <b>side-scrolling</b> runner where the player controls a character that automatically moves forward. <br  />
+ We had to create a <b>server</b> and a <b>client</b> that communicate with each other using the <b>TCP protocol</b>. <br  />
+ The game is a <b>side-scrolling</b> runner where the player controls a character that automatically moves forward. <br  />
  The player can control the character's vertical position by pressing space key to make it fly and releasing it to let it fall. <br  />
  The goal is to collect coins while avoiding obstacles. <br  />
 </p>
@@ -174,29 +175,35 @@ Defense</h2>
 <p>TODO</p>
 <h1><a class="anchor" id="autotoc_md25"></a>
 Compilation 🛠️</h1>
-<p>This project is compiled with <b>CMake</b> and <b>Makefile</b>. This project use <b>C++20</b> standard, <b>CMake 3.20</b> or higher and <b>SFML 2.5.1</b>.</p>
+<p>This project is compiled with <b>CMake</b> and <b>Makefile</b>. <br  />
+ This project use <b>C++20</b> standard, <b>CMake 3.20</b> or higher and <b>SFML 2.5.1</b>. <br  />
+</p>
 <p>You can compile the project with this command :</p><ul>
-<li>via CMake and Makefile: <div class="fragment"><div class="line">cmake -B build -S . &amp;&amp; make -s -C build -j</div>
+<li>via CMake and Makefile : <div class="fragment"><div class="line">cmake -B build -S . &amp;&amp; make -s -C build -j</div>
 </div><!-- fragment --></li>
-<li>via only Makefile: <div class="fragment"><div class="line">make</div>
+<li>via only Makefile : <div class="fragment"><div class="line">make</div>
 </div><!-- fragment --></li>
 </ul>
 <p>If you want to debug the program, you can compile the project with this :</p><ul>
-<li>via CMake and Makefile: <div class="fragment"><div class="line">cmake -B build -S . &amp;&amp; make debug -s -C build -j</div>
+<li>via CMake and Makefile : <div class="fragment"><div class="line">cmake -B build -S . &amp;&amp; make debug -s -C build -j</div>
 </div><!-- fragment --></li>
-<li>via only Makefile: <div class="fragment"><div class="line">make debug </div>
+<li>via only Makefile : <div class="fragment"><div class="line">make debug </div>
 </div><!-- fragment --></li>
 </ul>
 <p>If you want clean the project, you can run this command :</p><ul>
-<li>via CMake and Makefile: <div class="fragment"><div class="line">cmake -B build -S . &amp;&amp; make fclean -s -C build -j</div>
+<li>via CMake and Makefile : <div class="fragment"><div class="line">cmake -B build -S . &amp;&amp; make fclean -s -C build -j</div>
 </div><!-- fragment --></li>
-<li>via only Makefile: <div class="fragment"><div class="line">make fclean</div>
+<li>via only Makefile : <div class="fragment"><div class="line">make fclean</div>
 </div><!-- fragment --></li>
 </ul>
 <p>You can clean and compile the project with the rules <code>re</code> and for debugging <code>re_debug</code></p>
 <h1><a class="anchor" id="autotoc_md26"></a>
 Documentation 📚</h1>
-<p>The requested documentation for EPITECH is accessible <a href="https://toro-nicolas.github.io/Jetpack/doc.txt">here</a>. The protocol documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/protocol_documentation_en.md">here</a>. The map documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/map_documentation.md">here</a>. The code documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/html/">here</a>.</p>
+<p>The requested documentation for EPITECH is accessible <a href="https://toro-nicolas.github.io/Jetpack/doc.txt">here</a>. <br  />
+ The protocol documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/protocol_documentation_en.md">here</a>. <br  />
+ The map documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/map_documentation.md">here</a>. <br  />
+ The code documentation is accessible <a href="https://toro-nicolas.github.io/Jetpack/html/">here</a>. <br  />
+</p>
 <p>You can generate the documentation with this command :</p><ul>
 <li>via CMake and Makefile: <div class="fragment"><div class="line">cmake -B build -S . &amp;&amp; make doc -s -C build -j</div>
 </div><!-- fragment --></li>
