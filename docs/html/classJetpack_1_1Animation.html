@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project documentation: Animation Class Reference</title>
+<title>Jetpack documentation: Animation Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Project documentation<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Jetpack documentation<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -97,24 +97,33 @@ $(function(){initNavTree('classJetpack_1_1Animation.html',''); initResizable(tru
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle"><div class="title">Animation Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Handles animation of sprites using sprite sheets.  
+<p>A class that handles sprite animations.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Animation_8hpp_source.html">Animation.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJetpack_1_1Animation_1_1AnimationData.html">AnimationData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to store animation data.  <a href="structJetpack_1_1Animation_1_1AnimationData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abc647c3a1bd729d7670a0e378f1c812e" id="r_abc647c3a1bd729d7670a0e378f1c812e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc647c3a1bd729d7670a0e378f1c812e">Animation</a> (sf::Vector2u textureSize={0, 0})</td></tr>
-<tr class="memdesc:abc647c3a1bd729d7670a0e378f1c812e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classJetpack_1_1Animation.html" title="Handles animation of sprites using sprite sheets.">Animation</a> class.  <br /></td></tr>
+<tr class="memdesc:abc647c3a1bd729d7670a0e378f1c812e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classJetpack_1_1Animation.html" title="A class that handles sprite animations.">Animation</a> class.  <br /></td></tr>
 <tr class="separator:abc647c3a1bd729d7670a0e378f1c812e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee6bf19aac7ec2c3616d44496f7bed5b" id="r_aee6bf19aac7ec2c3616d44496f7bed5b"><td class="memItemLeft" align="right" valign="top"><a id="aee6bf19aac7ec2c3616d44496f7bed5b" name="aee6bf19aac7ec2c3616d44496f7bed5b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Animation</b> ()</td></tr>
-<tr class="memdesc:aee6bf19aac7ec2c3616d44496f7bed5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classJetpack_1_1Animation.html" title="Handles animation of sprites using sprite sheets.">Animation</a> class. <br /></td></tr>
+<tr class="memdesc:aee6bf19aac7ec2c3616d44496f7bed5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classJetpack_1_1Animation.html" title="A class that handles sprite animations.">Animation</a> class. <br /></td></tr>
 <tr class="separator:aee6bf19aac7ec2c3616d44496f7bed5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f28cd311f470ad88af5aada3b374534" id="r_a5f28cd311f470ad88af5aada3b374534"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f28cd311f470ad88af5aada3b374534">setTextureSize</a> (sf::Vector2u textureSize)</td></tr>
 <tr class="memdesc:a5f28cd311f470ad88af5aada3b374534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the texture size for the animation.  <br /></td></tr>
@@ -136,9 +145,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pause</b> ()</td></tr>
 <tr class="memdesc:a7167f5c196fc5e167bfabde1a730e81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses the current animation. <br /></td></tr>
 <tr class="separator:a7167f5c196fc5e167bfabde1a730e81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c528baf37154d347366083f0f816846" id="r_a8c528baf37154d347366083f0f816846"><td class="memItemLeft" align="right" valign="top"><a id="a8c528baf37154d347366083f0f816846" name="a8c528baf37154d347366083f0f816846"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
-<tr class="memdesc:a8c528baf37154d347366083f0f816846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the current animation and resets it. <br /></td></tr>
+<tr class="memitem:a8c528baf37154d347366083f0f816846" id="r_a8c528baf37154d347366083f0f816846"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c528baf37154d347366083f0f816846">stop</a> ()</td></tr>
+<tr class="memdesc:a8c528baf37154d347366083f0f816846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the current animation and resets it.  <br /></td></tr>
 <tr class="separator:a8c528baf37154d347366083f0f816846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a389ad71786b00ae81f69060f153509d2" id="r_a389ad71786b00ae81f69060f153509d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a389ad71786b00ae81f69060f153509d2">isPlaying</a> () const</td></tr>
 <tr class="memdesc:a389ad71786b00ae81f69060f153509d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the animation is playing.  <br /></td></tr>
@@ -155,9 +163,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="memitem:a371f939703a387a3d3705cc831a05454" id="r_a371f939703a387a3d3705cc831a05454"><td class="memItemLeft" align="right" valign="top">const sf::IntRect &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a371f939703a387a3d3705cc831a05454">getTextureRect</a> () const</td></tr>
 <tr class="memdesc:a371f939703a387a3d3705cc831a05454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the texture rectangle for the current frame.  <br /></td></tr>
 <tr class="separator:a371f939703a387a3d3705cc831a05454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9490752c55bfcbf5885d9cc3f2aff896" id="r_a9490752c55bfcbf5885d9cc3f2aff896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9490752c55bfcbf5885d9cc3f2aff896">updateTextureRect</a> ()</td></tr>
+<tr class="memdesc:a9490752c55bfcbf5885d9cc3f2aff896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the texture rectangle for the current frame.  <br /></td></tr>
+<tr class="separator:a9490752c55bfcbf5885d9cc3f2aff896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2b7ef532636151c61782920d282ef55a" id="r_a2b7ef532636151c61782920d282ef55a"><td class="memItemLeft" align="right" valign="top"><a id="a2b7ef532636151c61782920d282ef55a" name="a2b7ef532636151c61782920d282ef55a"></a>
+sf::IntRect&#160;</td><td class="memItemRight" valign="bottom"><b>_textureRect</b></td></tr>
+<tr class="separator:a2b7ef532636151c61782920d282ef55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d66828d0bdd63e7ff765a6a9c2c8e0" id="r_a54d66828d0bdd63e7ff765a6a9c2c8e0"><td class="memItemLeft" align="right" valign="top"><a id="a54d66828d0bdd63e7ff765a6a9c2c8e0" name="a54d66828d0bdd63e7ff765a6a9c2c8e0"></a>
+sf::Vector2u&#160;</td><td class="memItemRight" valign="bottom"><b>_textureSize</b></td></tr>
+<tr class="separator:a54d66828d0bdd63e7ff765a6a9c2c8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7c4ba1d8f985b770226a58f0603584" id="r_a4e7c4ba1d8f985b770226a58f0603584"><td class="memItemLeft" align="right" valign="top"><a id="a4e7c4ba1d8f985b770226a58f0603584" name="a4e7c4ba1d8f985b770226a58f0603584"></a>
+std::unordered_map&lt; std::string, <a class="el" href="structJetpack_1_1Animation_1_1AnimationData.html">AnimationData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_animations</b></td></tr>
+<tr class="separator:a4e7c4ba1d8f985b770226a58f0603584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1199be9a5fcb4e506046420a118dce1" id="r_ad1199be9a5fcb4e506046420a118dce1"><td class="memItemLeft" align="right" valign="top"><a id="ad1199be9a5fcb4e506046420a118dce1" name="ad1199be9a5fcb4e506046420a118dce1"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_currentAnimationName</b></td></tr>
+<tr class="separator:ad1199be9a5fcb4e506046420a118dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0557a97073219316bafa500dff2a4663" id="r_a0557a97073219316bafa500dff2a4663"><td class="memItemLeft" align="right" valign="top"><a id="a0557a97073219316bafa500dff2a4663" name="a0557a97073219316bafa500dff2a4663"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_currentFrame</b></td></tr>
+<tr class="separator:a0557a97073219316bafa500dff2a4663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa473988ba4f8931d154c1fbaffccd186" id="r_aa473988ba4f8931d154c1fbaffccd186"><td class="memItemLeft" align="right" valign="top"><a id="aa473988ba4f8931d154c1fbaffccd186" name="aa473988ba4f8931d154c1fbaffccd186"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_timeAccumulator</b></td></tr>
+<tr class="separator:aa473988ba4f8931d154c1fbaffccd186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b41868b201ccc32652b234a78770208" id="r_a3b41868b201ccc32652b234a78770208"><td class="memItemLeft" align="right" valign="top"><a id="a3b41868b201ccc32652b234a78770208" name="a3b41868b201ccc32652b234a78770208"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isPlaying</b></td></tr>
+<tr class="separator:a3b41868b201ccc32652b234a78770208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47eeba35c64f80949047c619e9b8046d" id="r_a47eeba35c64f80949047c619e9b8046d"><td class="memItemLeft" align="right" valign="top"><a id="a47eeba35c64f80949047c619e9b8046d" name="a47eeba35c64f80949047c619e9b8046d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_flipX</b></td></tr>
+<tr class="separator:a47eeba35c64f80949047c619e9b8046d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806632e3b11dcf6a2682e6b072604f09" id="r_a806632e3b11dcf6a2682e6b072604f09"><td class="memItemLeft" align="right" valign="top"><a id="a806632e3b11dcf6a2682e6b072604f09" name="a806632e3b11dcf6a2682e6b072604f09"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_flipY</b></td></tr>
+<tr class="separator:a806632e3b11dcf6a2682e6b072604f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles animation of sprites using sprite sheets. </p>
+<div class="textblock"><p>A class that handles sprite animations. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc647c3a1bd729d7670a0e378f1c812e" name="abc647c3a1bd729d7670a0e378f1c812e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc647c3a1bd729d7670a0e378f1c812e">&#9670;&#160;</a></span>Animation()</h2>
@@ -174,7 +218,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructor for <a class="el" href="classJetpack_1_1Animation.html" title="Handles animation of sprites using sprite sheets.">Animation</a> class. </p>
+<p>Constructor for <a class="el" href="classJetpack_1_1Animation.html" title="A class that handles sprite animations.">Animation</a> class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">textureSize</td><td>Size of the texture (default is {0, 0}) </td></tr>
@@ -236,7 +280,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the animation was added successfully </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the animation was added successfully and false otherwise </dd></dl>
 
 </div>
 </div>
@@ -256,7 +300,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 </div><div class="memdoc">
 
 <p>Gets the current animation name. </p>
-<dl class="section return"><dt>Returns</dt><dd>Name of the current animation </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of the current animation</dd>
+<dd>
+The current animation name </dd></dl>
 
 </div>
 </div>
@@ -327,7 +373,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the animation was set successfully </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the animation was set successfully and false otherwise </dd></dl>
 
 </div>
 </div>
@@ -406,6 +452,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 
 </div>
 </div>
+<a id="a8c528baf37154d347366083f0f816846" name="a8c528baf37154d347366083f0f816846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c528baf37154d347366083f0f816846">&#9670;&#160;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops the current animation and resets it. </p>
+<p>Stops the current animation. </p>
+
+</div>
+</div>
 <a id="ac52ac34d9f452d759ea1ce3f8df9f682" name="ac52ac34d9f452d759ea1ce3f8df9f682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac52ac34d9f452d759ea1ce3f8df9f682">&#9670;&#160;</a></span>update()</h2>
 
@@ -428,6 +494,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9490752c55bfcbf5885d9cc3f2aff896" name="a9490752c55bfcbf5885d9cc3f2aff896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9490752c55bfcbf5885d9cc3f2aff896">&#9670;&#160;</a></span>updateTextureRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateTextureRect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the texture rectangle for the current frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>The updated texture rectangle </dd></dl>
 
 </div>
 </div>

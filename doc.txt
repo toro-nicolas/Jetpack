@@ -74,19 +74,29 @@ The taller the map, the smaller the player will appear.
 
 Supported Characters:
     c   => Coin (collectible)
-    e   => Trap (danger)
+    e   => Zapper trap (danger)
+    l   => Laser trap (danger)
+    m   => Missile trap (danger)
     _   => Empty space
 
 Note:
 Any other character is not supported and will be interpreted as an empty space.
 
 Example (maps/basic.txt):
-
-    ___c____
-    __e_c___
-    ___e____
+________ccc___ccc___________l___________________________________________________
+_______c___c_c___c__________l______cccccc___________m___________________________
+_______c____c____c__________l_____ccccccc___________m____________eeeeeeeeeeee___
+________c_______c___________l____cc_____________________________________________
+_________c_____c____________l___cc______l_________________________cccc__________
+__________c___c________________cc_______l_________________________cccc__________
+___________c_c___________ccccccc________l_______________________________________
+____________c____________cccccc_________l_________________eeeeeeeeeeeee_________
+________________________________________l_______________________________________
+________________________________________________________________________________
 
 - The player can move around the grid.
 - Coins (c) can be collected.
-- Traps (e) should be avoided.
+- Zapper traps (e) should be avoided.
+- Laser traps (l) should be avoided.
+- Missile traps (m) should be avoided.
 - Empty spaces (_) are traversable tiles.

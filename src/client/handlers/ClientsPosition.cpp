@@ -7,14 +7,20 @@
 /**
  * @file ClientsPosition.cpp
  * @brief The ClientsPosition.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "client/Client.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Handles the response of the command CLIENTS_POSITIONS
+     * @param code The command code
+     * @param message The message to handle
+     */
 	void Client::handleCommandClientsPositions(const int &code, const std::string &message)
 	{
+        std::size_t current_id;
 		std::set<std::size_t> players_id;
 		std::vector<std::string> clients_positions;
 		std::vector<std::string> client_data;
@@ -36,10 +42,11 @@ namespace Jetpack {
 				client_pos = stringToVector(client_data[1], ",");
 				if (client_pos.size() != 2)
 					throw std::invalid_argument("Invalid number of arguments.");
-				if (_players.find(std::stoul(client_data[0])) == _players.end())
-					_players[std::stoul(client_data[0])] = std::make_unique<Player>(std::stoul(client_data[0]), _player_texture.getSize());
-				_players[std::stoul(client_data[0])]->setPosition({std::stof(client_pos[0]), std::stof(client_pos[1])});
-				players_id.insert(std::stoul(client_data[0]));
+                current_id = std::stoul(client_data[0]);
+				if (_players.find(current_id) == _players.end())
+					_players[current_id] = std::make_unique<Player>(current_id, _player_texture.getSize());
+				_players[current_id]->setPosition({std::stof(client_pos[0]), std::stof(client_pos[1])});
+				players_id.insert(current_id);
 			}
 			for (auto it = _players.begin(); it != _players.end(); ) {
 				if (players_id.find(it->first) == players_id.end()) {

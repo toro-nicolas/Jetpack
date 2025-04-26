@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project documentation: Client Class Reference</title>
+<title>Jetpack documentation: Client Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Project documentation<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Jetpack documentation<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -101,10 +101,20 @@ $(function(){initNavTree('classJetpack_1_1Client.html',''); initResizable(true);
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
   <div class="headertitle"><div class="title">Client Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A class that represents the client.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Client_8hpp_source.html">Client.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -115,11 +125,11 @@ typedef std::tuple&lt; CmdID, int, std::string &gt;&#160;</td><td class="memItem
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4319ee684546c85391061eaabef56d35" id="r_a4319ee684546c85391061eaabef56d35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4319ee684546c85391061eaabef56d35">Client</a> (int ac, char **av)</td></tr>
-<tr class="memdesc:a4319ee684546c85391061eaabef56d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classJetpack_1_1Animation.html" title="Handles animation of sprites using sprite sheets.">Animation</a> class.  <br /></td></tr>
+<tr class="memdesc:a4319ee684546c85391061eaabef56d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classJetpack_1_1Client.html" title="A class that represents the client.">Client</a> class.  <br /></td></tr>
 <tr class="separator:a4319ee684546c85391061eaabef56d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37731a8f5dd5caca4cc2ddb8b556cd6c" id="r_a37731a8f5dd5caca4cc2ddb8b556cd6c"><td class="memItemLeft" align="right" valign="top"><a id="a37731a8f5dd5caca4cc2ddb8b556cd6c" name="a37731a8f5dd5caca4cc2ddb8b556cd6c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Client</b> ()</td></tr>
-<tr class="memdesc:a37731a8f5dd5caca4cc2ddb8b556cd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classJetpack_1_1Animation.html" title="Handles animation of sprites using sprite sheets.">Animation</a> class. <br /></td></tr>
+<tr class="memdesc:a37731a8f5dd5caca4cc2ddb8b556cd6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classJetpack_1_1Client.html" title="A class that represents the client.">Client</a> class. <br /></td></tr>
 <tr class="separator:a37731a8f5dd5caca4cc2ddb8b556cd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7547544036712233febe1db3149327d" id="r_ab7547544036712233febe1db3149327d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7547544036712233febe1db3149327d">Client</a> (const <a class="el" href="classJetpack_1_1Client.html">Client</a> &amp;)=delete</td></tr>
 <tr class="memdesc:ab7547544036712233febe1db3149327d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <br /></td></tr>
@@ -136,9 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4db246d8cc9cad58e93d41fea8595e6" id="r_ac4db246d8cc9cad58e93d41fea8595e6"><td class="memItemLeft" align="right" valign="top">response_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4db246d8cc9cad58e93d41fea8595e6">getJetpackResponse</a> ()</td></tr>
 <tr class="memdesc:ac4db246d8cc9cad58e93d41fea8595e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a response from the server.  <br /></td></tr>
 <tr class="separator:ac4db246d8cc9cad58e93d41fea8595e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a43e6d814de94978c515cb084873b1" id="r_a13a43e6d814de94978c515cb084873b1"><td class="memItemLeft" align="right" valign="top"><a id="a13a43e6d814de94978c515cb084873b1" name="a13a43e6d814de94978c515cb084873b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
-<tr class="memdesc:a13a43e6d814de94978c515cb084873b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the client. <br /></td></tr>
+<tr class="memitem:a13a43e6d814de94978c515cb084873b1" id="r_a13a43e6d814de94978c515cb084873b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13a43e6d814de94978c515cb084873b1">run</a> ()</td></tr>
+<tr class="memdesc:a13a43e6d814de94978c515cb084873b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the client.  <br /></td></tr>
 <tr class="separator:a13a43e6d814de94978c515cb084873b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -162,28 +171,312 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ad6a66fb6530cb0cb95c373781cfaa31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the exit command.  <br /></td></tr>
 <tr class="separator:ad6a66fb6530cb0cb95c373781cfaa31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0939e0d3a0e95f6254181c00c37f26a6" id="r_a0939e0d3a0e95f6254181c00c37f26a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0939e0d3a0e95f6254181c00c37f26a6">handleCommandId</a> (const int &amp;code, const std::string &amp;message)</td></tr>
-<tr class="memdesc:a0939e0d3a0e95f6254181c00c37f26a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the command ID.  <br /></td></tr>
+<tr class="memdesc:a0939e0d3a0e95f6254181c00c37f26a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the response of the command ID.  <br /></td></tr>
 <tr class="separator:a0939e0d3a0e95f6254181c00c37f26a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f98bb9ba2dfc2bbaee494bf9e9b4675" id="r_a3f98bb9ba2dfc2bbaee494bf9e9b4675"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f98bb9ba2dfc2bbaee494bf9e9b4675">handleCommandMap</a> (const int &amp;code, const std::string &amp;message)</td></tr>
-<tr class="memdesc:a3f98bb9ba2dfc2bbaee494bf9e9b4675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the command MAP.  <br /></td></tr>
+<tr class="memdesc:a3f98bb9ba2dfc2bbaee494bf9e9b4675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the response of the command MAP.  <br /></td></tr>
 <tr class="separator:a3f98bb9ba2dfc2bbaee494bf9e9b4675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abefc63b92421511610cfa38479891421" id="r_abefc63b92421511610cfa38479891421"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abefc63b92421511610cfa38479891421">handleCommandPseudo</a> (const int &amp;code, const std::string &amp;message)</td></tr>
-<tr class="memdesc:abefc63b92421511610cfa38479891421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the command PSEUDO.  <br /></td></tr>
+<tr class="memdesc:abefc63b92421511610cfa38479891421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the response of the command PSEUDO.  <br /></td></tr>
 <tr class="separator:abefc63b92421511610cfa38479891421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9a0272bf2770b263ea88720efec41a" id="r_a6a9a0272bf2770b263ea88720efec41a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a9a0272bf2770b263ea88720efec41a">handleCommandMove</a> (const int &amp;code, const std::string &amp;message)</td></tr>
-<tr class="memdesc:a6a9a0272bf2770b263ea88720efec41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the command MOVE.  <br /></td></tr>
+<tr class="memdesc:a6a9a0272bf2770b263ea88720efec41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the response of the command MOVE.  <br /></td></tr>
 <tr class="separator:a6a9a0272bf2770b263ea88720efec41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1313dede023f991dabd13fef343e2c8c" id="r_a1313dede023f991dabd13fef343e2c8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1313dede023f991dabd13fef343e2c8c">handleCommandClientsNb</a> (const int &amp;code, const std::string &amp;message)</td></tr>
-<tr class="memdesc:a1313dede023f991dabd13fef343e2c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the command CLIENT_NB.  <br /></td></tr>
+<tr class="memdesc:a1313dede023f991dabd13fef343e2c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the response of the command CLIENT_NB.  <br /></td></tr>
 <tr class="separator:a1313dede023f991dabd13fef343e2c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa93f7664fa4b95fe3a1fb86ae69425c1" id="r_aa93f7664fa4b95fe3a1fb86ae69425c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa93f7664fa4b95fe3a1fb86ae69425c1">handleCommandClientsStats</a> (const int &amp;code, const std::string &amp;message)</td></tr>
-<tr class="memdesc:aa93f7664fa4b95fe3a1fb86ae69425c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the command CLIENTS_STATS.  <br /></td></tr>
+<tr class="memdesc:aa93f7664fa4b95fe3a1fb86ae69425c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the response of the command CLIENTS_STATS.  <br /></td></tr>
 <tr class="separator:aa93f7664fa4b95fe3a1fb86ae69425c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab93ab4d4d9e2cdd7a3bd2fee2b1a09" id="r_aeab93ab4d4d9e2cdd7a3bd2fee2b1a09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeab93ab4d4d9e2cdd7a3bd2fee2b1a09">handleCommandClientsPositions</a> (const int &amp;code, const std::string &amp;message)</td></tr>
-<tr class="memdesc:aeab93ab4d4d9e2cdd7a3bd2fee2b1a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the command CLIENTS_POSITIONS.  <br /></td></tr>
+<tr class="memdesc:aeab93ab4d4d9e2cdd7a3bd2fee2b1a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the response of the command CLIENTS_POSITIONS.  <br /></td></tr>
 <tr class="separator:aeab93ab4d4d9e2cdd7a3bd2fee2b1a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab3c5ff31f10315ebe33b9bb25fdd9437" id="r_ab3c5ff31f10315ebe33b9bb25fdd9437"><td class="memItemLeft" align="right" valign="top"><a id="ab3c5ff31f10315ebe33b9bb25fdd9437" name="ab3c5ff31f10315ebe33b9bb25fdd9437"></a>
+std::unordered_map&lt; std::string, std::function&lt; void(std::vector&lt; std::string &gt; &amp;command)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_commands</b></td></tr>
+<tr class="separator:ab3c5ff31f10315ebe33b9bb25fdd9437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a9cd2f7208097e5cdf04bb94d92a123a9" id="r_a9cd2f7208097e5cdf04bb94d92a123a9"><td class="memItemLeft" align="right" valign="top"><a id="a9cd2f7208097e5cdf04bb94d92a123a9" name="a9cd2f7208097e5cdf04bb94d92a123a9"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>MusicState</b> { <b>NONE</b>
+, <b>PLAYING</b>
+, <b>PAUSED</b>
+, <b>STOPPED</b>
+ }</td></tr>
+<tr class="separator:a9cd2f7208097e5cdf04bb94d92a123a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7899b65f1ea0f655e4bbf8d2a5714285" id="r_a7899b65f1ea0f655e4bbf8d2a5714285"><td class="memItemLeft" align="right" valign="top"><a id="a7899b65f1ea0f655e4bbf8d2a5714285" name="a7899b65f1ea0f655e4bbf8d2a5714285"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>GameState</b> { <b>MAIN_MENU</b>
+, <b>GAME</b>
+, <b>END</b>
+ }</td></tr>
+<tr class="separator:a7899b65f1ea0f655e4bbf8d2a5714285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae353ecea4199b9fdbea61ac03dd807bd" id="r_ae353ecea4199b9fdbea61ac03dd807bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae353ecea4199b9fdbea61ac03dd807bd">_checkArgs</a> (int ac, char **av)</td></tr>
+<tr class="memdesc:ae353ecea4199b9fdbea61ac03dd807bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the arguments passed to the client.  <br /></td></tr>
+<tr class="separator:ae353ecea4199b9fdbea61ac03dd807bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50d781291de3f6d409e4e81a5d1f4f67" id="r_a50d781291de3f6d409e4e81a5d1f4f67"><td class="memItemLeft" align="right" valign="top"><a id="a50d781291de3f6d409e4e81a5d1f4f67" name="a50d781291de3f6d409e4e81a5d1f4f67"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_initCommands</b> ()</td></tr>
+<tr class="memdesc:a50d781291de3f6d409e4e81a5d1f4f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the commands of the client. <br /></td></tr>
+<tr class="separator:a50d781291de3f6d409e4e81a5d1f4f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8473d462cc709d559ab8689c54c492" id="r_a5a8473d462cc709d559ab8689c54c492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a8473d462cc709d559ab8689c54c492">_initGameInformation</a> ()</td></tr>
+<tr class="memdesc:a5a8473d462cc709d559ab8689c54c492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the game information.  <br /></td></tr>
+<tr class="separator:a5a8473d462cc709d559ab8689c54c492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5a22a9e3ce1852231188fa2087bcea" id="r_ade5a22a9e3ce1852231188fa2087bcea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade5a22a9e3ce1852231188fa2087bcea">_initClient</a> ()</td></tr>
+<tr class="memdesc:ade5a22a9e3ce1852231188fa2087bcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the client.  <br /></td></tr>
+<tr class="separator:ade5a22a9e3ce1852231188fa2087bcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ef58debbfe494cbe56af23e77fa8cc" id="r_a66ef58debbfe494cbe56af23e77fa8cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66ef58debbfe494cbe56af23e77fa8cc">_initFx</a> ()</td></tr>
+<tr class="memdesc:a66ef58debbfe494cbe56af23e77fa8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the FX for the game.  <br /></td></tr>
+<tr class="separator:a66ef58debbfe494cbe56af23e77fa8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd5b892c31510e73349255795c3ec16" id="r_acfd5b892c31510e73349255795c3ec16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfd5b892c31510e73349255795c3ec16">_initMusic</a> ()</td></tr>
+<tr class="memdesc:acfd5b892c31510e73349255795c3ec16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the music for the game.  <br /></td></tr>
+<tr class="separator:acfd5b892c31510e73349255795c3ec16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0873cd6b7afd501d362202e615d45744" id="r_a0873cd6b7afd501d362202e615d45744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0873cd6b7afd501d362202e615d45744">_initElements</a> ()</td></tr>
+<tr class="memdesc:a0873cd6b7afd501d362202e615d45744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the elements of the game.  <br /></td></tr>
+<tr class="separator:a0873cd6b7afd501d362202e615d45744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e14b9c3c6435c2fec6611a38c3c4988" id="r_a0e14b9c3c6435c2fec6611a38c3c4988"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e14b9c3c6435c2fec6611a38c3c4988">_initSfml</a> ()</td></tr>
+<tr class="memdesc:a0e14b9c3c6435c2fec6611a38c3c4988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SFML window and all game elements.  <br /></td></tr>
+<tr class="separator:a0e14b9c3c6435c2fec6611a38c3c4988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3611e9b3203b0cd738b5683977c793a" id="r_aa3611e9b3203b0cd738b5683977c793a"><td class="memItemLeft" align="right" valign="top"><a id="aa3611e9b3203b0cd738b5683977c793a" name="aa3611e9b3203b0cd738b5683977c793a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_promptThread</b> ()</td></tr>
+<tr class="memdesc:aa3611e9b3203b0cd738b5683977c793a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread for handling user input. <br /></td></tr>
+<tr class="separator:aa3611e9b3203b0cd738b5683977c793a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77c87608d2731c755760198c721e73a" id="r_af77c87608d2731c755760198c721e73a"><td class="memItemLeft" align="right" valign="top"><a id="af77c87608d2731c755760198c721e73a" name="af77c87608d2731c755760198c721e73a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_communicationThread</b> ()</td></tr>
+<tr class="memdesc:af77c87608d2731c755760198c721e73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread for handling communication with the server. <br /></td></tr>
+<tr class="separator:af77c87608d2731c755760198c721e73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9be195ae3ab0cee01bc2fd137380547" id="r_aa9be195ae3ab0cee01bc2fd137380547"><td class="memItemLeft" align="right" valign="top"><a id="aa9be195ae3ab0cee01bc2fd137380547" name="aa9be195ae3ab0cee01bc2fd137380547"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_gameThread</b> ()</td></tr>
+<tr class="memdesc:aa9be195ae3ab0cee01bc2fd137380547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread for handling the game loop. <br /></td></tr>
+<tr class="separator:aa9be195ae3ab0cee01bc2fd137380547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01e6ee044d4b8a0c08b8d8738d903a7" id="r_ab01e6ee044d4b8a0c08b8d8738d903a7"><td class="memItemLeft" align="right" valign="top"><a id="ab01e6ee044d4b8a0c08b8d8738d903a7" name="ab01e6ee044d4b8a0c08b8d8738d903a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_updateFromResponse</b> ()</td></tr>
+<tr class="memdesc:ab01e6ee044d4b8a0c08b8d8738d903a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the game from the server responses. <br /></td></tr>
+<tr class="separator:ab01e6ee044d4b8a0c08b8d8738d903a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c9fb81dca147b97ecd8abc503af73d" id="r_a86c9fb81dca147b97ecd8abc503af73d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86c9fb81dca147b97ecd8abc503af73d">_updateAnimation</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a86c9fb81dca147b97ecd8abc503af73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the animation.  <br /></td></tr>
+<tr class="separator:a86c9fb81dca147b97ecd8abc503af73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aaa5af7dd82b7980b2ab8c24a916b36" id="r_a4aaa5af7dd82b7980b2ab8c24a916b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aaa5af7dd82b7980b2ab8c24a916b36">_updateMenu</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a4aaa5af7dd82b7980b2ab8c24a916b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the menu.  <br /></td></tr>
+<tr class="separator:a4aaa5af7dd82b7980b2ab8c24a916b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9031ae42d7c23de59ba42cb34bf14ad7" id="r_a9031ae42d7c23de59ba42cb34bf14ad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9031ae42d7c23de59ba42cb34bf14ad7">_updateGame</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a9031ae42d7c23de59ba42cb34bf14ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the game.  <br /></td></tr>
+<tr class="separator:a9031ae42d7c23de59ba42cb34bf14ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94a6752b94972cadfb5aa81924288b0" id="r_ae94a6752b94972cadfb5aa81924288b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae94a6752b94972cadfb5aa81924288b0">_update</a> (float deltaTime)</td></tr>
+<tr class="memdesc:ae94a6752b94972cadfb5aa81924288b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the client.  <br /></td></tr>
+<tr class="separator:ae94a6752b94972cadfb5aa81924288b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5164273b38b2d4afc002e575b4f44b" id="r_aff5164273b38b2d4afc002e575b4f44b"><td class="memItemLeft" align="right" valign="top"><a id="aff5164273b38b2d4afc002e575b4f44b" name="aff5164273b38b2d4afc002e575b4f44b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_drawMenu</b> ()</td></tr>
+<tr class="memdesc:aff5164273b38b2d4afc002e575b4f44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the elements of the menu. <br /></td></tr>
+<tr class="separator:aff5164273b38b2d4afc002e575b4f44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f68a58fe6d6cf485e965aef5244f58" id="r_ae2f68a58fe6d6cf485e965aef5244f58"><td class="memItemLeft" align="right" valign="top"><a id="ae2f68a58fe6d6cf485e965aef5244f58" name="ae2f68a58fe6d6cf485e965aef5244f58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_drawGame</b> ()</td></tr>
+<tr class="memdesc:ae2f68a58fe6d6cf485e965aef5244f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the elements of the game. <br /></td></tr>
+<tr class="separator:ae2f68a58fe6d6cf485e965aef5244f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98e071b96a4eab7fd77bcc9e73b6a92" id="r_ac98e071b96a4eab7fd77bcc9e73b6a92"><td class="memItemLeft" align="right" valign="top"><a id="ac98e071b96a4eab7fd77bcc9e73b6a92" name="ac98e071b96a4eab7fd77bcc9e73b6a92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_drawEnd</b> ()</td></tr>
+<tr class="memdesc:ac98e071b96a4eab7fd77bcc9e73b6a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the elements of the end. <br /></td></tr>
+<tr class="separator:ac98e071b96a4eab7fd77bcc9e73b6a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9e817af97e5bdd0ef5b35ebf926db6" id="r_a9c9e817af97e5bdd0ef5b35ebf926db6"><td class="memItemLeft" align="right" valign="top"><a id="a9c9e817af97e5bdd0ef5b35ebf926db6" name="a9c9e817af97e5bdd0ef5b35ebf926db6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_draw</b> ()</td></tr>
+<tr class="memdesc:a9c9e817af97e5bdd0ef5b35ebf926db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the elements on the screen depending on the game state. <br /></td></tr>
+<tr class="separator:a9c9e817af97e5bdd0ef5b35ebf926db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667565d3df85164e49703172d16098dc" id="r_a667565d3df85164e49703172d16098dc"><td class="memItemLeft" align="right" valign="top"><a id="a667565d3df85164e49703172d16098dc" name="a667565d3df85164e49703172d16098dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_analyseEvent</b> ()</td></tr>
+<tr class="memdesc:a667565d3df85164e49703172d16098dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyses the events of the game. <br /></td></tr>
+<tr class="separator:a667565d3df85164e49703172d16098dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acd539d7ab55883ed09d9961e79a3e8b4" id="r_acd539d7ab55883ed09d9961e79a3e8b4"><td class="memItemLeft" align="right" valign="top"><a id="acd539d7ab55883ed09d9961e79a3e8b4" name="acd539d7ab55883ed09d9961e79a3e8b4"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_ip</b></td></tr>
+<tr class="separator:acd539d7ab55883ed09d9961e79a3e8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f7288ead0eaab1de1b40600c3bd1f1" id="r_a95f7288ead0eaab1de1b40600c3bd1f1"><td class="memItemLeft" align="right" valign="top"><a id="a95f7288ead0eaab1de1b40600c3bd1f1" name="a95f7288ead0eaab1de1b40600c3bd1f1"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_port</b></td></tr>
+<tr class="separator:a95f7288ead0eaab1de1b40600c3bd1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab177caee4aa2b745304dbac56f4b6eb8" id="r_ab177caee4aa2b745304dbac56f4b6eb8"><td class="memItemLeft" align="right" valign="top"><a id="ab177caee4aa2b745304dbac56f4b6eb8" name="ab177caee4aa2b745304dbac56f4b6eb8"></a>
+std::unique_ptr&lt; <a class="el" href="classJetpack_1_1Socket.html">Socket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_client_socket</b></td></tr>
+<tr class="separator:ab177caee4aa2b745304dbac56f4b6eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53536bd29b2dd47244d7f11ead5c9203" id="r_a53536bd29b2dd47244d7f11ead5c9203"><td class="memItemLeft" align="right" valign="top"><a id="a53536bd29b2dd47244d7f11ead5c9203" name="a53536bd29b2dd47244d7f11ead5c9203"></a>
+struct sockaddr_in&#160;</td><td class="memItemRight" valign="bottom"><b>_client</b></td></tr>
+<tr class="separator:a53536bd29b2dd47244d7f11ead5c9203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b070f94625d07ed6c931f55d98c23f9" id="r_a2b070f94625d07ed6c931f55d98c23f9"><td class="memItemLeft" align="right" valign="top"><a id="a2b070f94625d07ed6c931f55d98c23f9" name="a2b070f94625d07ed6c931f55d98c23f9"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>_commands_queue_mutex</b></td></tr>
+<tr class="separator:a2b070f94625d07ed6c931f55d98c23f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562474f7b0166d73f56eeff9e70ee6db" id="r_a562474f7b0166d73f56eeff9e70ee6db"><td class="memItemLeft" align="right" valign="top"><a id="a562474f7b0166d73f56eeff9e70ee6db" name="a562474f7b0166d73f56eeff9e70ee6db"></a>
+std::queue&lt; std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_commands_queue</b></td></tr>
+<tr class="separator:a562474f7b0166d73f56eeff9e70ee6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad689c0444431836d3b3c3ab3afe0f0bd" id="r_ad689c0444431836d3b3c3ab3afe0f0bd"><td class="memItemLeft" align="right" valign="top"><a id="ad689c0444431836d3b3c3ab3afe0f0bd" name="ad689c0444431836d3b3c3ab3afe0f0bd"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>_response_queue_mutex</b></td></tr>
+<tr class="separator:ad689c0444431836d3b3c3ab3afe0f0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45fcffe28c55d8cf4b3f75a86d1a4e99" id="r_a45fcffe28c55d8cf4b3f75a86d1a4e99"><td class="memItemLeft" align="right" valign="top"><a id="a45fcffe28c55d8cf4b3f75a86d1a4e99" name="a45fcffe28c55d8cf4b3f75a86d1a4e99"></a>
+std::queue&lt; response_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_response_queue</b></td></tr>
+<tr class="separator:a45fcffe28c55d8cf4b3f75a86d1a4e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9184e3124e566c11a361938b3a039eaa" id="r_a9184e3124e566c11a361938b3a039eaa"><td class="memItemLeft" align="right" valign="top"><a id="a9184e3124e566c11a361938b3a039eaa" name="a9184e3124e566c11a361938b3a039eaa"></a>
+GameState&#160;</td><td class="memItemRight" valign="bottom"><b>_gameState</b> = MAIN_MENU</td></tr>
+<tr class="separator:a9184e3124e566c11a361938b3a039eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69034e2eea14929884f40c4a35f08999" id="r_a69034e2eea14929884f40c4a35f08999"><td class="memItemLeft" align="right" valign="top"><a id="a69034e2eea14929884f40c4a35f08999" name="a69034e2eea14929884f40c4a35f08999"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_id</b></td></tr>
+<tr class="separator:a69034e2eea14929884f40c4a35f08999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436a440eb8d67813a38c4054fea87ccc" id="r_a436a440eb8d67813a38c4054fea87ccc"><td class="memItemLeft" align="right" valign="top"><a id="a436a440eb8d67813a38c4054fea87ccc" name="a436a440eb8d67813a38c4054fea87ccc"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_map</b></td></tr>
+<tr class="separator:a436a440eb8d67813a38c4054fea87ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d2b04c1692cc45b6534138a6c7265d" id="r_a68d2b04c1692cc45b6534138a6c7265d"><td class="memItemLeft" align="right" valign="top"><a id="a68d2b04c1692cc45b6534138a6c7265d" name="a68d2b04c1692cc45b6534138a6c7265d"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_nb_players</b> = 0</td></tr>
+<tr class="separator:a68d2b04c1692cc45b6534138a6c7265d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4826c8d5669517148c362d8a95dc32bf" id="r_a4826c8d5669517148c362d8a95dc32bf"><td class="memItemLeft" align="right" valign="top"><a id="a4826c8d5669517148c362d8a95dc32bf" name="a4826c8d5669517148c362d8a95dc32bf"></a>
+std::map&lt; size_t, std::unique_ptr&lt; <a class="el" href="classJetpack_1_1Player.html">Player</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_players</b></td></tr>
+<tr class="separator:a4826c8d5669517148c362d8a95dc32bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68e17710594415956cd2ee70e68e4ef" id="r_ae68e17710594415956cd2ee70e68e4ef"><td class="memItemLeft" align="right" valign="top"><a id="ae68e17710594415956cd2ee70e68e4ef" name="ae68e17710594415956cd2ee70e68e4ef"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_winner</b></td></tr>
+<tr class="separator:ae68e17710594415956cd2ee70e68e4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3520c1844c57d20ff3e515812e2acaf8" id="r_a3520c1844c57d20ff3e515812e2acaf8"><td class="memItemLeft" align="right" valign="top"><a id="a3520c1844c57d20ff3e515812e2acaf8" name="a3520c1844c57d20ff3e515812e2acaf8"></a>
+sf::RenderWindow&#160;</td><td class="memItemRight" valign="bottom"><b>_window</b></td></tr>
+<tr class="separator:a3520c1844c57d20ff3e515812e2acaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3330df0067656708cd8c93316b06cd65" id="r_a3330df0067656708cd8c93316b06cd65"><td class="memItemLeft" align="right" valign="top"><a id="a3330df0067656708cd8c93316b06cd65" name="a3330df0067656708cd8c93316b06cd65"></a>
+sf::Font&#160;</td><td class="memItemRight" valign="bottom"><b>_font</b></td></tr>
+<tr class="separator:a3330df0067656708cd8c93316b06cd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b33b8aabfb720d484742900d816f30" id="r_aa6b33b8aabfb720d484742900d816f30"><td class="memItemLeft" align="right" valign="top"><a id="aa6b33b8aabfb720d484742900d816f30" name="aa6b33b8aabfb720d484742900d816f30"></a>
+sf::Text&#160;</td><td class="memItemRight" valign="bottom"><b>_text</b></td></tr>
+<tr class="separator:aa6b33b8aabfb720d484742900d816f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad46a2da7067e9238f32212a56f966da" id="r_aad46a2da7067e9238f32212a56f966da"><td class="memItemLeft" align="right" valign="top"><a id="aad46a2da7067e9238f32212a56f966da" name="aad46a2da7067e9238f32212a56f966da"></a>
+sf::Music&#160;</td><td class="memItemRight" valign="bottom"><b>_menuMusic</b></td></tr>
+<tr class="separator:aad46a2da7067e9238f32212a56f966da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7495c6474b534b5286a897ee51fccef5" id="r_a7495c6474b534b5286a897ee51fccef5"><td class="memItemLeft" align="right" valign="top"><a id="a7495c6474b534b5286a897ee51fccef5" name="a7495c6474b534b5286a897ee51fccef5"></a>
+MusicState&#160;</td><td class="memItemRight" valign="bottom"><b>_menuMusicState</b> = MusicState::NONE</td></tr>
+<tr class="separator:a7495c6474b534b5286a897ee51fccef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7c23990a2403eb0fd3dd15a00ead3f" id="r_a6a7c23990a2403eb0fd3dd15a00ead3f"><td class="memItemLeft" align="right" valign="top"><a id="a6a7c23990a2403eb0fd3dd15a00ead3f" name="a6a7c23990a2403eb0fd3dd15a00ead3f"></a>
+sf::Music&#160;</td><td class="memItemRight" valign="bottom"><b>_gameMusic</b></td></tr>
+<tr class="separator:a6a7c23990a2403eb0fd3dd15a00ead3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2048a09112be0d1d3e6a9eb224dd6c3d" id="r_a2048a09112be0d1d3e6a9eb224dd6c3d"><td class="memItemLeft" align="right" valign="top"><a id="a2048a09112be0d1d3e6a9eb224dd6c3d" name="a2048a09112be0d1d3e6a9eb224dd6c3d"></a>
+MusicState&#160;</td><td class="memItemRight" valign="bottom"><b>_gameMusicState</b> = MusicState::NONE</td></tr>
+<tr class="separator:a2048a09112be0d1d3e6a9eb224dd6c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b275d4107d91af648f1946ee04f4625" id="r_a9b275d4107d91af648f1946ee04f4625"><td class="memItemLeft" align="right" valign="top"><a id="a9b275d4107d91af648f1946ee04f4625" name="a9b275d4107d91af648f1946ee04f4625"></a>
+sf::SoundBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundStartBuffer</b></td></tr>
+<tr class="separator:a9b275d4107d91af648f1946ee04f4625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6db1bc49a49c2a2fd389631e394ffb" id="r_aef6db1bc49a49c2a2fd389631e394ffb"><td class="memItemLeft" align="right" valign="top"><a id="aef6db1bc49a49c2a2fd389631e394ffb" name="aef6db1bc49a49c2a2fd389631e394ffb"></a>
+sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundStart</b></td></tr>
+<tr class="separator:aef6db1bc49a49c2a2fd389631e394ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add844b27ca6fdc2818a2c95c836424f9" id="r_add844b27ca6fdc2818a2c95c836424f9"><td class="memItemLeft" align="right" valign="top"><a id="add844b27ca6fdc2818a2c95c836424f9" name="add844b27ca6fdc2818a2c95c836424f9"></a>
+sf::SoundBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundStopBuffer</b></td></tr>
+<tr class="separator:add844b27ca6fdc2818a2c95c836424f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa308dd829dc35a8afd0e909d65aad6ba" id="r_aa308dd829dc35a8afd0e909d65aad6ba"><td class="memItemLeft" align="right" valign="top"><a id="aa308dd829dc35a8afd0e909d65aad6ba" name="aa308dd829dc35a8afd0e909d65aad6ba"></a>
+sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundStop</b></td></tr>
+<tr class="separator:aa308dd829dc35a8afd0e909d65aad6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a882310d16ca0510e3c482d3a9fbb02" id="r_a3a882310d16ca0510e3c482d3a9fbb02"><td class="memItemLeft" align="right" valign="top"><a id="a3a882310d16ca0510e3c482d3a9fbb02" name="a3a882310d16ca0510e3c482d3a9fbb02"></a>
+sf::SoundBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundDownBuffer</b></td></tr>
+<tr class="separator:a3a882310d16ca0510e3c482d3a9fbb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add792131fa4b600486ee7d4c043101c6" id="r_add792131fa4b600486ee7d4c043101c6"><td class="memItemLeft" align="right" valign="top"><a id="add792131fa4b600486ee7d4c043101c6" name="add792131fa4b600486ee7d4c043101c6"></a>
+sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundDown</b></td></tr>
+<tr class="separator:add792131fa4b600486ee7d4c043101c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f4ddb0ddacaf97173fe5b15f0dd784" id="r_ab7f4ddb0ddacaf97173fe5b15f0dd784"><td class="memItemLeft" align="right" valign="top"><a id="ab7f4ddb0ddacaf97173fe5b15f0dd784" name="ab7f4ddb0ddacaf97173fe5b15f0dd784"></a>
+sf::SoundBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundUpBuffer</b></td></tr>
+<tr class="separator:ab7f4ddb0ddacaf97173fe5b15f0dd784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a681e5c861ba8eaa0a9ed03e87d988c" id="r_a6a681e5c861ba8eaa0a9ed03e87d988c"><td class="memItemLeft" align="right" valign="top"><a id="a6a681e5c861ba8eaa0a9ed03e87d988c" name="a6a681e5c861ba8eaa0a9ed03e87d988c"></a>
+sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpackSoundUp</b></td></tr>
+<tr class="separator:a6a681e5c861ba8eaa0a9ed03e87d988c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345d934b27aa3578ed85e3477ca80a22" id="r_a345d934b27aa3578ed85e3477ca80a22"><td class="memItemLeft" align="right" valign="top"><a id="a345d934b27aa3578ed85e3477ca80a22" name="a345d934b27aa3578ed85e3477ca80a22"></a>
+sf::SoundBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>_coinSoundBuffer</b></td></tr>
+<tr class="separator:a345d934b27aa3578ed85e3477ca80a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b5227fa0a92666fb0bb5f58074c477" id="r_aa9b5227fa0a92666fb0bb5f58074c477"><td class="memItemLeft" align="right" valign="top"><a id="aa9b5227fa0a92666fb0bb5f58074c477" name="aa9b5227fa0a92666fb0bb5f58074c477"></a>
+sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><b>_coinSound</b></td></tr>
+<tr class="separator:aa9b5227fa0a92666fb0bb5f58074c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba370196d1266f9d39aa050ca04ad0d" id="r_a4ba370196d1266f9d39aa050ca04ad0d"><td class="memItemLeft" align="right" valign="top"><a id="a4ba370196d1266f9d39aa050ca04ad0d" name="a4ba370196d1266f9d39aa050ca04ad0d"></a>
+sf::SoundBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>_zappedSoundBuffer</b></td></tr>
+<tr class="separator:a4ba370196d1266f9d39aa050ca04ad0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d0351ffc822edf9a7702a08fc4ca4a" id="r_af1d0351ffc822edf9a7702a08fc4ca4a"><td class="memItemLeft" align="right" valign="top"><a id="af1d0351ffc822edf9a7702a08fc4ca4a" name="af1d0351ffc822edf9a7702a08fc4ca4a"></a>
+sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><b>_zappedSound</b></td></tr>
+<tr class="separator:af1d0351ffc822edf9a7702a08fc4ca4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e63d4782c89e617e971b647c1e3fc87" id="r_a6e63d4782c89e617e971b647c1e3fc87"><td class="memItemLeft" align="right" valign="top"><a id="a6e63d4782c89e617e971b647c1e3fc87" name="a6e63d4782c89e617e971b647c1e3fc87"></a>
+sf::SoundBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>_firedSoundBuffer</b></td></tr>
+<tr class="separator:a6e63d4782c89e617e971b647c1e3fc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2ba339eea9cec4e8996397e10a816f" id="r_add2ba339eea9cec4e8996397e10a816f"><td class="memItemLeft" align="right" valign="top"><a id="add2ba339eea9cec4e8996397e10a816f" name="add2ba339eea9cec4e8996397e10a816f"></a>
+sf::Sound&#160;</td><td class="memItemRight" valign="bottom"><b>_firedSound</b></td></tr>
+<tr class="separator:add2ba339eea9cec4e8996397e10a816f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b2666a609cce6c1b9fe8487c80ea6f" id="r_ae6b2666a609cce6c1b9fe8487c80ea6f"><td class="memItemLeft" align="right" valign="top"><a id="ae6b2666a609cce6c1b9fe8487c80ea6f" name="ae6b2666a609cce6c1b9fe8487c80ea6f"></a>
+sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><b>_background_texture</b></td></tr>
+<tr class="separator:ae6b2666a609cce6c1b9fe8487c80ea6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a516c414e1a20d8f6cccc589de6e03dc3" id="r_a516c414e1a20d8f6cccc589de6e03dc3"><td class="memItemLeft" align="right" valign="top"><a id="a516c414e1a20d8f6cccc589de6e03dc3" name="a516c414e1a20d8f6cccc589de6e03dc3"></a>
+sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>_background_sprite</b></td></tr>
+<tr class="separator:a516c414e1a20d8f6cccc589de6e03dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2a2e51349d69f9cb87755ae4abf0b6" id="r_aba2a2e51349d69f9cb87755ae4abf0b6"><td class="memItemLeft" align="right" valign="top"><a id="aba2a2e51349d69f9cb87755ae4abf0b6" name="aba2a2e51349d69f9cb87755ae4abf0b6"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_background_size</b></td></tr>
+<tr class="separator:aba2a2e51349d69f9cb87755ae4abf0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff8db9319da2d03933409dcd0045606" id="r_a8ff8db9319da2d03933409dcd0045606"><td class="memItemLeft" align="right" valign="top"><a id="a8ff8db9319da2d03933409dcd0045606" name="a8ff8db9319da2d03933409dcd0045606"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_background_pos</b> = 0.f</td></tr>
+<tr class="separator:a8ff8db9319da2d03933409dcd0045606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3ca40491a85f5db8ba494111552310" id="r_a6a3ca40491a85f5db8ba494111552310"><td class="memItemLeft" align="right" valign="top"><a id="a6a3ca40491a85f5db8ba494111552310" name="a6a3ca40491a85f5db8ba494111552310"></a>
+sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><b>_player_texture</b></td></tr>
+<tr class="separator:a6a3ca40491a85f5db8ba494111552310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33924ae31e6780db29d563e5b4650a2a" id="r_a33924ae31e6780db29d563e5b4650a2a"><td class="memItemLeft" align="right" valign="top"><a id="a33924ae31e6780db29d563e5b4650a2a" name="a33924ae31e6780db29d563e5b4650a2a"></a>
+sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>_player_sprite</b></td></tr>
+<tr class="separator:a33924ae31e6780db29d563e5b4650a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e85d2509029f1ecce98cb6d3a8ae96a" id="r_a5e85d2509029f1ecce98cb6d3a8ae96a"><td class="memItemLeft" align="right" valign="top"><a id="a5e85d2509029f1ecce98cb6d3a8ae96a" name="a5e85d2509029f1ecce98cb6d3a8ae96a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_jetpack</b> = false</td></tr>
+<tr class="separator:a5e85d2509029f1ecce98cb6d3a8ae96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020d5ff9396697c6b622c3b75f65705c" id="r_a020d5ff9396697c6b622c3b75f65705c"><td class="memItemLeft" align="right" valign="top"><a id="a020d5ff9396697c6b622c3b75f65705c" name="a020d5ff9396697c6b622c3b75f65705c"></a>
+Player::PlayerState&#160;</td><td class="memItemRight" valign="bottom"><b>_curent_state</b> = Player::PlayerState::NORMAL</td></tr>
+<tr class="separator:a020d5ff9396697c6b622c3b75f65705c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453a563148de9b74506432bbff40d610" id="r_a453a563148de9b74506432bbff40d610"><td class="memItemLeft" align="right" valign="top"><a id="a453a563148de9b74506432bbff40d610" name="a453a563148de9b74506432bbff40d610"></a>
+sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><b>_coin_texture</b></td></tr>
+<tr class="separator:a453a563148de9b74506432bbff40d610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecf9dab93a2e1bd418fd83ec001ea16" id="r_aaecf9dab93a2e1bd418fd83ec001ea16"><td class="memItemLeft" align="right" valign="top"><a id="aaecf9dab93a2e1bd418fd83ec001ea16" name="aaecf9dab93a2e1bd418fd83ec001ea16"></a>
+sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>_coin_sprite</b></td></tr>
+<tr class="separator:aaecf9dab93a2e1bd418fd83ec001ea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac111a0ba1bfea1055a4b5b7a0972746d" id="r_ac111a0ba1bfea1055a4b5b7a0972746d"><td class="memItemLeft" align="right" valign="top"><a id="ac111a0ba1bfea1055a4b5b7a0972746d" name="ac111a0ba1bfea1055a4b5b7a0972746d"></a>
+<a class="el" href="classJetpack_1_1Animation.html">Animation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_coin_animation</b></td></tr>
+<tr class="separator:ac111a0ba1bfea1055a4b5b7a0972746d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8251735f2a8be5ad72a5501860759d68" id="r_a8251735f2a8be5ad72a5501860759d68"><td class="memItemLeft" align="right" valign="top"><a id="a8251735f2a8be5ad72a5501860759d68" name="a8251735f2a8be5ad72a5501860759d68"></a>
+std::unordered_map&lt; std::array&lt; std::size_t, 2 &gt;, std::unique_ptr&lt; <a class="el" href="classJetpack_1_1Coin.html">Coin</a> &gt;, <a class="el" href="classJetpack_1_1PositionHash.html">PositionHash</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_coins</b></td></tr>
+<tr class="separator:a8251735f2a8be5ad72a5501860759d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a83f82b2d7b7593d8fedeb40d033d2c" id="r_a0a83f82b2d7b7593d8fedeb40d033d2c"><td class="memItemLeft" align="right" valign="top"><a id="a0a83f82b2d7b7593d8fedeb40d033d2c" name="a0a83f82b2d7b7593d8fedeb40d033d2c"></a>
+std::unordered_map&lt; std::array&lt; std::size_t, 2 &gt;, std::unique_ptr&lt; <a class="el" href="classJetpack_1_1Trap.html">Trap</a> &gt;, <a class="el" href="classJetpack_1_1PositionHash.html">PositionHash</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_traps</b></td></tr>
+<tr class="separator:a0a83f82b2d7b7593d8fedeb40d033d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb45553fa2bc5d49bb1d9c7ea343c0be" id="r_acb45553fa2bc5d49bb1d9c7ea343c0be"><td class="memItemLeft" align="right" valign="top"><a id="acb45553fa2bc5d49bb1d9c7ea343c0be" name="acb45553fa2bc5d49bb1d9c7ea343c0be"></a>
+sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><b>_zapper_texture</b></td></tr>
+<tr class="separator:acb45553fa2bc5d49bb1d9c7ea343c0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e02e3d2a0ba3f1483c2b59f8d1dc2a" id="r_a59e02e3d2a0ba3f1483c2b59f8d1dc2a"><td class="memItemLeft" align="right" valign="top"><a id="a59e02e3d2a0ba3f1483c2b59f8d1dc2a" name="a59e02e3d2a0ba3f1483c2b59f8d1dc2a"></a>
+sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>_zapper_sprite</b></td></tr>
+<tr class="separator:a59e02e3d2a0ba3f1483c2b59f8d1dc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63142409c3e79aeadd1c27d0a58eb81c" id="r_a63142409c3e79aeadd1c27d0a58eb81c"><td class="memItemLeft" align="right" valign="top"><a id="a63142409c3e79aeadd1c27d0a58eb81c" name="a63142409c3e79aeadd1c27d0a58eb81c"></a>
+<a class="el" href="classJetpack_1_1Animation.html">Animation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_zapper_animation</b></td></tr>
+<tr class="separator:a63142409c3e79aeadd1c27d0a58eb81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7697d9d9cedb56498ed21b7a9931b7" id="r_a8a7697d9d9cedb56498ed21b7a9931b7"><td class="memItemLeft" align="right" valign="top"><a id="a8a7697d9d9cedb56498ed21b7a9931b7" name="a8a7697d9d9cedb56498ed21b7a9931b7"></a>
+sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><b>_laser_texture</b></td></tr>
+<tr class="separator:a8a7697d9d9cedb56498ed21b7a9931b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b585d51571247aa00c3ade50feea35" id="r_a06b585d51571247aa00c3ade50feea35"><td class="memItemLeft" align="right" valign="top"><a id="a06b585d51571247aa00c3ade50feea35" name="a06b585d51571247aa00c3ade50feea35"></a>
+sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>_laser_sprite</b></td></tr>
+<tr class="separator:a06b585d51571247aa00c3ade50feea35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab092d688b8d8230ca032c0762702cd22" id="r_ab092d688b8d8230ca032c0762702cd22"><td class="memItemLeft" align="right" valign="top"><a id="ab092d688b8d8230ca032c0762702cd22" name="ab092d688b8d8230ca032c0762702cd22"></a>
+<a class="el" href="classJetpack_1_1Animation.html">Animation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_laser_animation</b></td></tr>
+<tr class="separator:ab092d688b8d8230ca032c0762702cd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d47694eb625696110699face785ba43" id="r_a6d47694eb625696110699face785ba43"><td class="memItemLeft" align="right" valign="top"><a id="a6d47694eb625696110699face785ba43" name="a6d47694eb625696110699face785ba43"></a>
+sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><b>_missile_texture</b></td></tr>
+<tr class="separator:a6d47694eb625696110699face785ba43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e75c7dbc06664105dfcf454c6dcaee5" id="r_a8e75c7dbc06664105dfcf454c6dcaee5"><td class="memItemLeft" align="right" valign="top"><a id="a8e75c7dbc06664105dfcf454c6dcaee5" name="a8e75c7dbc06664105dfcf454c6dcaee5"></a>
+sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>_missile_sprite</b></td></tr>
+<tr class="separator:a8e75c7dbc06664105dfcf454c6dcaee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6595aba865418d7bef5b46a18a07ebfa" id="r_a6595aba865418d7bef5b46a18a07ebfa"><td class="memItemLeft" align="right" valign="top"><a id="a6595aba865418d7bef5b46a18a07ebfa" name="a6595aba865418d7bef5b46a18a07ebfa"></a>
+<a class="el" href="classJetpack_1_1Animation.html">Animation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_missile_animation</b></td></tr>
+<tr class="separator:a6595aba865418d7bef5b46a18a07ebfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a36a29019f3e623257624b0f873244e7a" id="r_a36a29019f3e623257624b0f873244e7a"><td class="memItemLeft" align="right" valign="top"><a id="a36a29019f3e623257624b0f873244e7a" name="a36a29019f3e623257624b0f873244e7a"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>WINDOW_WIDTH</b> = 1280.0f</td></tr>
+<tr class="separator:a36a29019f3e623257624b0f873244e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a844a6e08f3ce28879a8d4e680cacab" id="r_a6a844a6e08f3ce28879a8d4e680cacab"><td class="memItemLeft" align="right" valign="top"><a id="a6a844a6e08f3ce28879a8d4e680cacab" name="a6a844a6e08f3ce28879a8d4e680cacab"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>WINDOW_HEIGHT</b> = 720.0f</td></tr>
+<tr class="separator:a6a844a6e08f3ce28879a8d4e680cacab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8244e362deb36d89dd5df35a5ec282a" id="r_af8244e362deb36d89dd5df35a5ec282a"><td class="memItemLeft" align="right" valign="top"><a id="af8244e362deb36d89dd5df35a5ec282a" name="af8244e362deb36d89dd5df35a5ec282a"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>BACKGROUND_SPEED</b> = 100.0f</td></tr>
+<tr class="separator:af8244e362deb36d89dd5df35a5ec282a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class that represents the client. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4319ee684546c85391061eaabef56d35" name="a4319ee684546c85391061eaabef56d35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4319ee684546c85391061eaabef56d35">&#9670;&#160;</a></span>Client() <span class="overload">[1/2]</span></h2>
 
@@ -203,7 +496,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructor for <a class="el" href="classJetpack_1_1Animation.html" title="Handles animation of sprites using sprite sheets.">Animation</a> class. </p>
+<p>Constructor for <a class="el" href="classJetpack_1_1Client.html" title="A class that represents the client.">Client</a> class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ac</td><td>Number of command line arguments </td></tr>
@@ -240,7 +533,7 @@ Protected Member Functions</h2></td></tr>
 <p>Deleted copy constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The other <a class="el" href="classJetpack_1_1Client.html">Client</a> object to copy from </td></tr>
+    <tr><td class="paramname">other</td><td>The other <a class="el" href="classJetpack_1_1Client.html" title="A class that represents the client.">Client</a> object to copy from </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,6 +541,383 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae353ecea4199b9fdbea61ac03dd807bd" name="ae353ecea4199b9fdbea61ac03dd807bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae353ecea4199b9fdbea61ac03dd807bd">&#9670;&#160;</a></span>_checkArgs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _checkArgs </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ac</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>av</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check the arguments passed to the client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ac</td><td>The number of arguments </td></tr>
+    <tr><td class="paramname">av</td><td>The arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackError.html" title="An exception class for Jetpack errors.">JetpackError</a></td><td>If the arguments are invalid </td></tr>
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackUsage.html" title="An exception class for usage errors.">JetpackUsage</a></td><td>If the help flag is passed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade5a22a9e3ce1852231188fa2087bcea" name="ade5a22a9e3ce1852231188fa2087bcea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5a22a9e3ce1852231188fa2087bcea">&#9670;&#160;</a></span>_initClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _initClient </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the client. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackError.html" title="An exception class for Jetpack errors.">JetpackError</a></td><td>If the connection fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0873cd6b7afd501d362202e615d45744" name="a0873cd6b7afd501d362202e615d45744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0873cd6b7afd501d362202e615d45744">&#9670;&#160;</a></span>_initElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _initElements </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the elements of the game. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackError.html" title="An exception class for Jetpack errors.">JetpackError</a></td><td>If the elements initialization fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a66ef58debbfe494cbe56af23e77fa8cc" name="a66ef58debbfe494cbe56af23e77fa8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ef58debbfe494cbe56af23e77fa8cc">&#9670;&#160;</a></span>_initFx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _initFx </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the FX for the game. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackError.html" title="An exception class for Jetpack errors.">JetpackError</a></td><td>If the FX initialization fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a8473d462cc709d559ab8689c54c492" name="a5a8473d462cc709d559ab8689c54c492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8473d462cc709d559ab8689c54c492">&#9670;&#160;</a></span>_initGameInformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _initGameInformation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the game information. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackError.html" title="An exception class for Jetpack errors.">JetpackError</a></td><td>If the ID or MAP command fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acfd5b892c31510e73349255795c3ec16" name="acfd5b892c31510e73349255795c3ec16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd5b892c31510e73349255795c3ec16">&#9670;&#160;</a></span>_initMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _initMusic </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the music for the game. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackError.html" title="An exception class for Jetpack errors.">JetpackError</a></td><td>If the music initialization fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e14b9c3c6435c2fec6611a38c3c4988" name="a0e14b9c3c6435c2fec6611a38c3c4988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e14b9c3c6435c2fec6611a38c3c4988">&#9670;&#160;</a></span>_initSfml()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _initSfml </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the SFML window and all game elements. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classJetpack_1_1JetpackError.html" title="An exception class for Jetpack errors.">JetpackError</a></td><td>If the SFML initialization fails </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae94a6752b94972cadfb5aa81924288b0" name="ae94a6752b94972cadfb5aa81924288b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae94a6752b94972cadfb5aa81924288b0">&#9670;&#160;</a></span>_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>The time since the last update </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86c9fb81dca147b97ecd8abc503af73d" name="a86c9fb81dca147b97ecd8abc503af73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c9fb81dca147b97ecd8abc503af73d">&#9670;&#160;</a></span>_updateAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _updateAnimation </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the animation. </p>
+<p>Updates the animation of the game.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>The time since the last update</td></tr>
+    <tr><td class="paramname">deltaTime</td><td>The time since the last frame </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9031ae42d7c23de59ba42cb34bf14ad7" name="a9031ae42d7c23de59ba42cb34bf14ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9031ae42d7c23de59ba42cb34bf14ad7">&#9670;&#160;</a></span>_updateGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _updateGame </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>The time since the last update </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4aaa5af7dd82b7980b2ab8c24a916b36" name="a4aaa5af7dd82b7980b2ab8c24a916b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aaa5af7dd82b7980b2ab8c24a916b36">&#9670;&#160;</a></span>_updateMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _updateMenu </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the menu. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>The time since the last update </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2b81ba1c20254a0ae7316e1202cc7e4c" name="a2b81ba1c20254a0ae7316e1202cc7e4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b81ba1c20254a0ae7316e1202cc7e4c">&#9670;&#160;</a></span>closeJetpackClient()</h2>
 
@@ -272,6 +942,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Closes the client. </p>
+<dl class="section note"><dt>Note</dt><dd>This function is a signal handler for SIGINT </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">signal</td><td>The signal to close the client </td></tr>
@@ -381,7 +1052,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles the command CLIENT_NB. </p>
+<p>Handles the response of the command CLIENT_NB. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>The command code </td></tr>
@@ -419,7 +1090,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles the command CLIENTS_POSITIONS. </p>
+<p>Handles the response of the command CLIENTS_POSITIONS. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>The command code </td></tr>
@@ -457,7 +1128,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles the command CLIENTS_STATS. </p>
+<p>Handles the response of the command CLIENTS_STATS. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>The command code </td></tr>
@@ -495,7 +1166,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles the command ID. </p>
+<p>Handles the response of the command ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>The command code </td></tr>
@@ -533,7 +1204,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles the command MAP. </p>
+<p>Handles the response of the command MAP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>The command code </td></tr>
@@ -571,7 +1242,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles the command MOVE. </p>
+<p>Handles the response of the command MOVE. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>The command code </td></tr>
@@ -609,7 +1280,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles the command PSEUDO. </p>
+<p>Handles the response of the command PSEUDO. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>The command code </td></tr>
@@ -646,11 +1317,31 @@ Protected Member Functions</h2></td></tr>
 <p>Deleted assignment operator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>The other <a class="el" href="classJetpack_1_1Client.html">Client</a> object to assign from </td></tr>
+    <tr><td class="paramname">other</td><td>The other <a class="el" href="classJetpack_1_1Client.html" title="A class that represents the client.">Client</a> object to assign from </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the current object </dd></dl>
+
+</div>
+</div>
+<a id="a13a43e6d814de94978c515cb084873b1" name="a13a43e6d814de94978c515cb084873b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a43e6d814de94978c515cb084873b1">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs the client. </p>
+<dl class="section note"><dt>Note</dt><dd>This function is the main loop of the client </dd></dl>
 
 </div>
 </div>
@@ -685,10 +1376,10 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/client/<a class="el" href="include_2client_2Client_8hpp_source.html">Client.hpp</a></li>
-<li>src/client/<a class="el" href="src_2client_2Client_8cpp.html">Client.cpp</a></li>
+<li>include/client/<a class="el" href="Client_8hpp_source.html">Client.hpp</a></li>
+<li>src/client/<a class="el" href="Client_8cpp.html">Client.cpp</a></li>
 <li>src/client/commands/<a class="el" href="Exit_8cpp.html">Exit.cpp</a></li>
-<li>src/client/<a class="el" href="Game_8cpp.html">Game.cpp</a></li>
+<li>src/client/<a class="el" href="client_2Game_8cpp.html">Game.cpp</a></li>
 <li>src/client/handlers/<a class="el" href="client_2handlers_2ClientsNb_8cpp.html">ClientsNb.cpp</a></li>
 <li>src/client/handlers/<a class="el" href="ClientsPosition_8cpp.html">ClientsPosition.cpp</a></li>
 <li>src/client/handlers/<a class="el" href="client_2handlers_2ClientsStats_8cpp.html">ClientsStats.cpp</a></li>

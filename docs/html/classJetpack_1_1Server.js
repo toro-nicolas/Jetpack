@@ -1,4 +1,31 @@
 var classJetpack_1_1Server =
 [
-    [ "Client", "classJetpack_1_1Server_1_1Client.html", null ]
+    [ "Client", "classJetpack_1_1Server_1_1Client.html", "classJetpack_1_1Server_1_1Client" ],
+    [ "Server", "classJetpack_1_1Server.html#a62b3bdc386680b3a6d9c08a8eafdf014", null ],
+    [ "~Server", "classJetpack_1_1Server.html#aa9320a8b35b2d116b716ae4077358c6b", null ],
+    [ "Server", "classJetpack_1_1Server.html#aca339e57a30b1c2a5e0b9ee496353536", null ],
+    [ "_addNewClient", "classJetpack_1_1Server.html#a7ab94937d5ccdb8e27a9ae3ef28240fc", null ],
+    [ "_analyseClientOnCoin", "classJetpack_1_1Server.html#a0fc57a3381d7221b1cfacab61d86bc1b", null ],
+    [ "_analysePoll", "classJetpack_1_1Server.html#aea08a8fa2d37a43b085363fc6ba53352", null ],
+    [ "_checkArgs", "classJetpack_1_1Server.html#ae353ecea4199b9fdbea61ac03dd807bd", null ],
+    [ "_disconnectClient", "classJetpack_1_1Server.html#ae2f149fb501af2edf731b461eeba8417", null ],
+    [ "_executeCommand", "classJetpack_1_1Server.html#a9df9692ce932ea2023f7116420be4b59", null ],
+    [ "_initCommands", "classJetpack_1_1Server.html#a50d781291de3f6d409e4e81a5d1f4f67", null ],
+    [ "_initMap", "classJetpack_1_1Server.html#aadf36ffc08e95bdadd35243b4ba4502c", null ],
+    [ "_initServer", "classJetpack_1_1Server.html#a45a3c65f61b103710ac4388316357940", null ],
+    [ "_isPlayerOn", "classJetpack_1_1Server.html#a2f9cb042bf01f3b3fc4812e003a13e87", null ],
+    [ "_readClientAction", "classJetpack_1_1Server.html#a09a72fbb70012dc3d5bcc5578ff62dbd", null ],
+    [ "_updateGame", "classJetpack_1_1Server.html#a98d9be5dd1ea02e551d58cca835d2dbc", null ],
+    [ "_updatePlayer", "classJetpack_1_1Server.html#af81a872a026384ccee20611cac44553f", null ],
+    [ "_writeClientAction", "classJetpack_1_1Server.html#ad2b53f9a4d161a8aeaa651151e85c0a7", null ],
+    [ "executeClientsNb", "classJetpack_1_1Server.html#a3ce4da384099e8a4f5fb0e3f662ccd8a", null ],
+    [ "executeClientsPositions", "classJetpack_1_1Server.html#a3959bac933718a0ba2f5e5ec59b77e3c", null ],
+    [ "executeClientsStats", "classJetpack_1_1Server.html#acefde5f3aebee7c938927b6d56173030", null ],
+    [ "executeId", "classJetpack_1_1Server.html#a2f26697c29e81dcde2beb8cf9c51692a", null ],
+    [ "executeMap", "classJetpack_1_1Server.html#a3506db23d1426b1a71ff018911d1d926", null ],
+    [ "executeMove", "classJetpack_1_1Server.html#a99d55f1f5d6fe8ba6e27c8467444f4fe", null ],
+    [ "executePseudo", "classJetpack_1_1Server.html#a178b73144f731603d3fb159b4df9e6e5", null ],
+    [ "operator=", "classJetpack_1_1Server.html#a1f54e5748653ec5b7e98b106713144fe", null ],
+    [ "run", "classJetpack_1_1Server.html#a13a43e6d814de94978c515cb084873b1", null ],
+    [ "sendResponse", "classJetpack_1_1Server.html#ad18b88a676b0b4ef8821e0249a37a965", null ]
 ];

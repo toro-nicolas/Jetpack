@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project documentation: Jetpack Map Documentation</title>
+<title>Jetpack documentation: Jetpack Map Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Project documentation<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Jetpack documentation<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -110,32 +110,37 @@ Overview</h2>
 Supported Characters</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Character   </th><th class="markdownTableHeadNone">Meaning    </th></tr>
+<th class="markdownTableHeadCenter">Character   </th><th class="markdownTableHeadCenter">Meaning    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>c</code>   </td><td class="markdownTableBodyNone">Coin (collectible)    </td></tr>
+<td class="markdownTableBodyCenter"><code>c</code>   </td><td class="markdownTableBodyCenter">Coin (collectible)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>e</code>   </td><td class="markdownTableBodyNone">Trap (danger)    </td></tr>
+<td class="markdownTableBodyCenter"><code>e</code>   </td><td class="markdownTableBodyCenter">Zapper trap (danger)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>_</code>   </td><td class="markdownTableBodyNone">Empty space   </td></tr>
+<td class="markdownTableBodyCenter"><code>l</code>   </td><td class="markdownTableBodyCenter">Laser trap (danger)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter"><code>m</code>   </td><td class="markdownTableBodyCenter">Missile trap (danger)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><code>_</code>   </td><td class="markdownTableBodyCenter">Empty space   </td></tr>
 </table>
 <p>Any <b>other character is not supported</b> and will be interpreted as an empty space.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Example</h2>
-<p>Here's an example map (<code>maps/basic.txt</code>):</p>
-<div class="fragment"><div class="line">_______c____________________e__________________________________________________________________</div>
-<div class="line">_______c____________________e______cccccc______________________________________________________</div>
-<div class="line">____________________________e_____ccccccc________________________eeeeeeeeeeee__________________</div>
-<div class="line">____________________________e____cc____________________________________________________________</div>
-<div class="line">____________________________e___cc______e_________________________cccc_________________________</div>
-<div class="line">_______________________________cc_______e_________________________cccc_________________________</div>
-<div class="line">_________________________ccccccc________e______________________________________________________</div>
-<div class="line">_________________________cccccc_________e_________________eeeeeeeeeeeee________________________</div>
-<div class="line">________________________________________e______________________________________________________</div>
-<div class="line">_______________________________________________________________________________________________</div>
+<p>Here's an example map (<code>maps/basic.txt</code>): </p><div class="fragment"><div class="line">________ccc___ccc___________l___________________________________________________</div>
+<div class="line">_______c___c_c___c__________l______cccccc___________m___________________________</div>
+<div class="line">_______c____c____c__________l_____ccccccc___________m____________eeeeeeeeeeee___</div>
+<div class="line">________c_______c___________l____cc_____________________________________________</div>
+<div class="line">_________c_____c____________l___cc______l_________________________cccc__________</div>
+<div class="line">__________c___c________________cc_______l_________________________cccc__________</div>
+<div class="line">___________c_c___________ccccccc________l_______________________________________</div>
+<div class="line">____________c____________cccccc_________l_________________eeeeeeeeeeeee_________</div>
+<div class="line">________________________________________l_______________________________________</div>
+<div class="line">________________________________________________________________________________</div>
 </div><!-- fragment --><ul>
 <li>The player can move around the grid.</li>
 <li>Coins (<code>c</code>) can be collected.</li>
-<li>Traps (<code>e</code>) should be avoided.</li>
+<li>Zappers (<code>e</code>) are dangerous and will kill the player.</li>
+<li>Lasers (<code>l</code>) are dangerous and will kill the player.</li>
+<li>Missiles (<code>m</code>) are dangerous and will kill the player.</li>
 <li>Empty spaces (<code>_</code>) are traversable tiles. </li>
 </ul>
 </div></div><!-- contents -->

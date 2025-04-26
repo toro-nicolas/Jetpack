@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['sendcommand_0',['sendCommand',['../classJetpack_1_1Client.html#af63adedc90b02ca5bcd6cc16ba750704',1,'Jetpack::Client']]],
-  ['setcollected_1',['setCollected',['../classJetpack_1_1Coin.html#a03378419a2d521255a23a6f35988f861',1,'Jetpack::Coin']]],
-  ['setcurrentanimation_2',['setCurrentAnimation',['../classJetpack_1_1Animation.html#a3dd3bab700e5daaae4a5e4246467ea29',1,'Jetpack::Animation']]],
-  ['setflipx_3',['setFlipX',['../classJetpack_1_1Animation.html#a84f0643444cc687f2f1d2258d81786bc',1,'Jetpack::Animation']]],
-  ['setflipy_4',['setFlipY',['../classJetpack_1_1Animation.html#ab83a230e9b9802eac4e79290ad3bce59',1,'Jetpack::Animation']]],
-  ['settexturesize_5',['setTextureSize',['../classJetpack_1_1Animation.html#a5f28cd311f470ad88af5aada3b374534',1,'Jetpack::Animation']]],
-  ['stop_6',['stop',['../classJetpack_1_1Animation.html#a8c528baf37154d347366083f0f816846',1,'Jetpack::Animation']]]
+  ['pause_0',['pause',['../classJetpack_1_1Animation.html#a7167f5c196fc5e167bfabde1a730e81d',1,'Jetpack::Animation']]],
+  ['play_1',['play',['../classJetpack_1_1Animation.html#a6d58098c6cf63c241ed03bc797256bb1',1,'Jetpack::Animation']]],
+  ['player_2',['Player',['../classJetpack_1_1Player.html#a4f18a0d1c36d22344fde30c6afd6a9fc',1,'Jetpack::Player::Player(std::size_t id, sf::Vector2u textureSize)'],['../classJetpack_1_1Player.html#acaac0dee273497eeb4bc1d92d7ea0b6e',1,'Jetpack::Player::Player(const Player &amp;)=delete']]],
+  ['point_3',['point',['../classJetpack_1_1Logs_1_1Debug.html#a7be4b8c3058898440d39454d1e36596e',1,'Jetpack::Logs::Debug']]]
 ];

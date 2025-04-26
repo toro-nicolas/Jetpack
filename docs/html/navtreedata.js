@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Project documentation", "index.html", [
+  [ "Jetpack documentation", "index.html", [
     [ "Jetpack Map Documentation", "md_map__documentation.html", null ],
     [ "Jetpack  Protocol Documentation", "md_protocol__documentation__en.html", null ],
     [ "Jetpack Protocol Documentation", "md_protocol__documentation__fr.html", null ],
@@ -58,8 +58,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AUTH_8cpp.html",
-"server_2src_2server_2USER_8cpp.html"
+"Animation_8hpp_source.html",
+"dir_821002d4f10779a80d4fb17bc32f21f1.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

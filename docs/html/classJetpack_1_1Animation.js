@@ -1,5 +1,6 @@
 var classJetpack_1_1Animation =
 [
+    [ "AnimationData", "structJetpack_1_1Animation_1_1AnimationData.html", null ],
     [ "Animation", "classJetpack_1_1Animation.html#abc647c3a1bd729d7670a0e378f1c812e", null ],
     [ "~Animation", "classJetpack_1_1Animation.html#aee6bf19aac7ec2c3616d44496f7bed5b", null ],
     [ "addAnimation", "classJetpack_1_1Animation.html#a74af7b7e9d72236f073d31f49102699b", null ],
@@ -13,5 +14,6 @@ var classJetpack_1_1Animation =
     [ "setFlipY", "classJetpack_1_1Animation.html#ab83a230e9b9802eac4e79290ad3bce59", null ],
     [ "setTextureSize", "classJetpack_1_1Animation.html#a5f28cd311f470ad88af5aada3b374534", null ],
     [ "stop", "classJetpack_1_1Animation.html#a8c528baf37154d347366083f0f816846", null ],
-    [ "update", "classJetpack_1_1Animation.html#ac52ac34d9f452d759ea1ce3f8df9f682", null ]
+    [ "update", "classJetpack_1_1Animation.html#ac52ac34d9f452d759ea1ce3f8df9f682", null ],
+    [ "updateTextureRect", "classJetpack_1_1Animation.html#a9490752c55bfcbf5885d9cc3f2aff896", null ]
 ];

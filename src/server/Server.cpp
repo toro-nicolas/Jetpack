@@ -13,12 +13,23 @@
 #include "server/ServerClient.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Check the arguments passed to the server
+     * @param ac The number of arguments
+     * @param av The arguments
+     * @throw JetpackError If the arguments are invalid
+     * @throw JetpackUsage If the help flag is passed
+     */
 	void Server::_checkArgs(int ac, char **av)
 	{
 		DEBUG << "CheckArgs AC: " << ac;
         for (int index = 1; index < ac; index++) {
             if (std::string(av[index]) == "-d") {
                 Logs::debug_mode = true;
+                continue;
+            }
+            if (std::string(av[index]) == "-i") {
+                _infinite_mode = true;
                 continue;
             }
             if (std::string(av[index]) == "--help") {
@@ -44,6 +55,10 @@ namespace Jetpack {
 			throw JetpackError("Invalid map path: " + _map_path);
 	}
 
+    /**
+     * @brief Initialize the map from the file
+     * @throw JetpackError If the map file is empty or cannot be opened
+     */
     void Server::_initMap()
     {
         std::ifstream map_file;
@@ -62,6 +77,9 @@ namespace Jetpack {
             throw JetpackError("Map file is empty: " + _map_path);
     }
 
+    /**
+     * @brief Initialize the commands of the server
+     */
 	void Server::_initCommands()
 	{
 		DEBUG << "Init server commands";
@@ -74,6 +92,10 @@ namespace Jetpack {
         _commands["CLIENTS_POSITIONS"] = [this](std::size_t id, std::vector<std::string> &args) { executeClientsPositions(id, args); };
     }
 
+    /**
+     * @brief Initialize the server
+     * @throw JetpackError If the server cannot be initialized
+     */
 	void Server::_initServer()
 	{
 		DEBUG << "InitServer: PORT: " << _port;
@@ -90,6 +112,12 @@ namespace Jetpack {
 		_initCommands();
 	}
 
+    /**
+     * @brief Constructor for Server class
+     * @param ac Number of command line arguments
+     * @param av Array of command line arguments
+     * @throw JetpackError If the arguments are invalid
+     */
 	Server::Server(int ac, char **av)
 	{
 		DEBUG << "Server creation";
@@ -100,109 +128,36 @@ namespace Jetpack {
 			DEBUG << "Server is starting";
 	}
 
+    /**
+     * @brief Destructor for Server class
+     */
 	Server::~Server()
 	{
 		DEBUG << "Server destruction";
 	}
 
-    void Server::_updatePlayers()
-    {
-        double delta_time = std::chrono::duration<double>(std::chrono::high_resolution_clock::now() - _last_update).count();
-        bool reset_coins = false;
-
-        //DEBUG << "Update players";
-        _last_update = std::chrono::high_resolution_clock::now();
-        if (_clients.size() > 1) {
-            _map_x_pos += PLAYER_SPEED * delta_time;
-            if (_map_x_pos >= static_cast<double>(_map[0].size())) {
-                _map_x_pos -= static_cast<double>(_map[0].size());
-                reset_coins = true;
-            }
-        }
-        for (auto &client : _clients) {
-			/* Update speed */
-            if (client.second->useJetpack()) {
-                client.second->setSpeed(client.second->getSpeed() + -JETPACK_SPEED * delta_time);
-            } else {
-                client.second->setSpeed(client.second->getSpeed() + GRAVITY * delta_time);
-            }
-
-			/* Update positions	*/
-            client.second->setPosition(
-				{_map_x_pos,
-				client.second->getPosition()[1] + client.second->getSpeed() * delta_time});
-            if (client.second->getPosition()[1] < MIN_HEIGHT) {
-                client.second->setPosition({client.second->getPosition()[0], 0});
-                client.second->setSpeed(0);
-            }
-            if (client.second->getPosition()[1] > MAX_HEIGHT) {
-                client.second->setPosition({client.second->getPosition()[0],
-                    static_cast<double>(MAX_HEIGHT)});
-                client.second->setSpeed(0);
-            }
-
-			/* Check if player is alive */
-			if (_map[std::floor(client.second->getPosition()[1])][std::floor(client.second->getPosition()[0])] == 'e' ||
-            _map[std::ceil(client.second->getPosition()[1])][std::floor(client.second->getPosition()[0])] == 'e' ||
-            _map[std::floor(client.second->getPosition()[1])][std::ceil(client.second->getPosition()[0])] == 'e' ||
-			_map[std::ceil(client.second->getPosition()[1])][std::ceil(client.second->getPosition()[0])] == 'e') {
-				client.second->setAlive(false);
-			}
-
-			/* Check if player is on a coin */
-            if (reset_coins)
-                client.second->getCoinsList().clear();
-			if (!client.second->isAlive())
-                continue;
-            if (std::find(client.second->getCoinsList().begin(), client.second->getCoinsList().end(),
-            std::array<unsigned long, 2>{static_cast<unsigned long>(std::floor(client.second->getPosition()[1])),
-            static_cast<unsigned long>(std::floor(client.second->getPosition()[0]))}) == client.second->getCoinsList().end() &&
-            _map[std::floor(client.second->getPosition()[1])][std::floor(client.second->getPosition()[0])] == 'c') {
-                client.second->setScore(client.second->getScore() + 1);
-                client.second->getCoinsList().push_back({static_cast<unsigned long>(std::floor(client.second->getPosition()[1])),
-                    static_cast<unsigned long>(std::floor(client.second->getPosition()[0]))});
-            }
-            if (std::find(client.second->getCoinsList().begin(), client.second->getCoinsList().end(),
-            std::array<unsigned long, 2>{static_cast<unsigned long>(std::ceil(client.second->getPosition()[1])),
-            static_cast<unsigned long>(std::floor(client.second->getPosition()[0]))}) == client.second->getCoinsList().end() &&
-            _map[std::ceil(client.second->getPosition()[1])][std::floor(client.second->getPosition()[0])] == 'c') {
-                client.second->setScore(client.second->getScore() + 1);
-                client.second->getCoinsList().push_back({static_cast<unsigned long>(std::ceil(client.second->getPosition()[1])),
-                    static_cast<unsigned long>(std::floor(client.second->getPosition()[0]))});
-            }
-            if (std::find(client.second->getCoinsList().begin(), client.second->getCoinsList().end(),
-            std::array<unsigned long, 2>{static_cast<unsigned long>(std::floor(client.second->getPosition()[1])),
-            static_cast<unsigned long>(std::ceil(client.second->getPosition()[0]))}) == client.second->getCoinsList().end() &&
-            _map[std::floor(client.second->getPosition()[1])][std::ceil(client.second->getPosition()[0])] == 'c') {
-                client.second->setScore(client.second->getScore() + 1);
-                client.second->getCoinsList().push_back({static_cast<unsigned long>(std::floor(client.second->getPosition()[1])),
-                    static_cast<unsigned long>(std::ceil(client.second->getPosition()[0]))});
-            }
-            if (std::find(client.second->getCoinsList().begin(), client.second->getCoinsList().end(),
-            std::array<unsigned long, 2>{static_cast<unsigned long>(std::ceil(client.second->getPosition()[1])),
-            static_cast<unsigned long>(std::ceil(client.second->getPosition()[0]))}) == client.second->getCoinsList().end() &&
-            _map[std::ceil(client.second->getPosition()[1])][std::ceil(client.second->getPosition()[0])] == 'c') {
-                client.second->setScore(client.second->getScore() + 1);
-                client.second->getCoinsList().push_back({static_cast<unsigned long>(std::ceil(client.second->getPosition()[1])),
-                    static_cast<unsigned long>(std::ceil(client.second->getPosition()[0]))});
-            }
-        }
-    }
-
+    /**
+     * @brief Adds a new client to the server
+     * @throw JetpackError If the accept fails
+     */
 	void Server::_addNewClient()
 	{
-		struct sockaddr_in client_addr;
+		struct sockaddr_in client_addr{};
 		socklen_t client_size = sizeof(client_addr);
 		int client_socket = accept(_server_socket->getSocket(), (struct sockaddr *)&client_addr, &client_size);
 
 		if (client_socket < 0)
 			throw JetpackError("Accept failed: " + std::string(strerror(errno)));
 		_poll_list.push_back({client_socket, POLLIN, 0});
-		_clients[client_socket] = std::make_unique<Client>(client_socket, client_addr);
+		_clients[client_socket] = std::make_unique<Client>(client_socket, client_addr, MAX_HEIGHT);
         sendResponse(client_socket, CMD_ID_NOT_FOUND, 220, "Connected to Jetpack server. ID: " + std::to_string(client_socket));
 		DEBUG << "Client connected: \"" << _clients[client_socket]->getPseudo() << "\" " << inet_ntoa(client_addr.sin_addr) << ":" << ntohs(client_addr.sin_port);
 	}
 
+    /**
+     * @brief Disconnects a client from the server
+     * @param poll_index The index of the client in the poll list
+     */
 	void Server::_disconnectClient(std::size_t poll_index)
 	{
         _clients.erase(_poll_list[poll_index].fd);
@@ -210,9 +165,14 @@ namespace Jetpack {
 		_poll_list.erase(_poll_list.begin() + poll_index);
 	}
 
+    /**
+     * @brief Executes a command
+     * @param poll_index The index of the client in the poll list
+     * @param command The command to execute
+     */
 	void Server::_executeCommand(std::size_t poll_index, const std::string &command)
 	{
-		std::vector<std::string> command_vector = stringToVector(command, " \t\n\r");
+		std::vector<std::string> command_vector = stringToVector(command, " \t\n");
 
 		DEBUG << "Execute command: " << command;
 		if (!command_vector.empty() && _commands.find(command_vector[0]) != _commands.end())
@@ -226,14 +186,18 @@ namespace Jetpack {
 			_disconnectClient(poll_index);
 	}
 
+    /**
+     * @brief Writes a response to the client
+     * @param poll_index The index of the client in the poll list
+     */
 	void Server::_writeClientAction(std::size_t poll_index)
 	{
 		std::string command = _clients[_poll_list[poll_index].fd]->getNextCommand();
-		std::size_t separator_pos = command.find("\r\n");
+		std::size_t separator_pos = command.find("\n");
 
 		DEBUG << "Write client action: " << poll_index;
 		if (separator_pos != std::string::npos) {
-			_clients[_poll_list[poll_index].fd]->setNextCommand(command.substr(separator_pos + 2));
+			_clients[_poll_list[poll_index].fd]->setNextCommand(command.substr(separator_pos + 1));
 			command = command.substr(0, separator_pos);
 			_executeCommand(poll_index, command);
 		} else
@@ -241,6 +205,11 @@ namespace Jetpack {
 		_poll_list[poll_index].events &= ~POLLOUT;
 	}
 
+    /**
+     * @brief Reads a command from the client
+     * @param poll_index The index of the client in the poll list
+     * @throw JetpackError If the read fails
+     */
 	void Server::_readClientAction(std::size_t poll_index)
 	{
 		std::string command = _clients[_poll_list[poll_index].fd]->getNextCommand();
@@ -257,12 +226,16 @@ namespace Jetpack {
 		if (read(_poll_list[poll_index].fd, buffer.data(), size) <= 0)
 			return _disconnectClient(poll_index);
 		_clients[_poll_list[poll_index].fd]->setNextCommand(command + buffer);
-		separator_pos = _clients[_poll_list[poll_index].fd]->getNextCommand().find("\r\n");
+		separator_pos = _clients[_poll_list[poll_index].fd]->getNextCommand().find("\n");
 		if (separator_pos != std::string::npos) {
 			_poll_list[poll_index].events |= POLLOUT;
 		}
 	}
 
+    /**
+     * @brief Analyzes the poll events
+     * @param poll_index The index of the client in the poll list
+     */
 	void Server::_analysePoll(std::size_t poll_index)
 	{
 		if (_poll_list[poll_index].revents & POLLOUT) {
@@ -277,6 +250,11 @@ namespace Jetpack {
 		}
 	}
 
+    /**
+     * @brief Runs the server
+     * @note This function is the main loop of the server
+     * @throw JetpackError If the poll fails
+     */
 	void Server::run()
 	{
 		DEBUG << "Server run";
@@ -287,17 +265,24 @@ namespace Jetpack {
 			for (std::size_t index = 0; index < _poll_list.size(); index++) {
 				_analysePoll(index);
 			}
-            _updatePlayers();
+            _updateGame();
 		}
 	}
 
+    /**
+     * @brief Sends a response to the client
+     * @param client_fd The file descriptor of the client
+     * @param cmd_id The command ID
+     * @param cmd_code The command code
+     * @param message The message to send
+     */
     void Server::sendResponse(int client_fd, CmdID cmd_id, int cmd_code, const std::string &message)
     {
         if (cmd_id == CMD_ID_NOT_FOUND) {
-            dprintf(client_fd, "%d %s\r\n", cmd_code, message.c_str());
+            dprintf(client_fd, "%d %s\n", cmd_code, message.c_str());
             DEBUG << "Send response: " << " " << cmd_code << " " << message;
         } else {
-            dprintf(client_fd, "%d %d %s\r\n", cmd_id, cmd_code,
+            dprintf(client_fd, "%d %d %s\n", cmd_id, cmd_code,
                 message.c_str());
             DEBUG << "Send response: " << CMD_ID_STR[cmd_id] << " " << cmd_code << " " << message;
         }

@@ -16,7 +16,7 @@ namespace Jetpack::Logs {
     bool debug_mode = false;
     
     /**
-     * @brief Get the local time
+     * @brief Gets the local time
      * @return <b>std::string</b> The local time
      */
     std::string Time::getLocalTime()

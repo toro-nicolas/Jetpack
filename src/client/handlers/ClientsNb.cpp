@@ -7,12 +7,17 @@
 /**
  * @file ClientsNb.cpp
  * @brief The ClientsNb.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "client/Client.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Handles the response of the command CLIENT_NB
+     * @param code The command code
+     * @param message The message to handle
+     */
 	void Client::handleCommandClientsNb(const int &code, const std::string &message)
 	{
 		DEBUG << "Handle command CLIENTS_NB";

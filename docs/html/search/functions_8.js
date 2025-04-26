@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pause_0',['pause',['../classJetpack_1_1Animation.html#a7167f5c196fc5e167bfabde1a730e81d',1,'Jetpack::Animation']]],
-  ['play_1',['play',['../classJetpack_1_1Animation.html#a6d58098c6cf63c241ed03bc797256bb1',1,'Jetpack::Animation']]],
-  ['point_2',['point',['../classJetpack_1_1Logs_1_1Debug.html#a7be4b8c3058898440d39454d1e36596e',1,'Jetpack::Logs::Debug']]]
+  ['jetpackerror_0',['JetpackError',['../classJetpack_1_1JetpackError.html#a6183ecfb231954033a037350f229a50e',1,'Jetpack::JetpackError']]],
+  ['jetpackstop_1',['JetpackStop',['../classJetpack_1_1JetpackStop.html#a006ea2ae5d85784c6327b49bf2fcef2e',1,'Jetpack::JetpackStop']]],
+  ['jetpackusage_2',['JetpackUsage',['../classJetpack_1_1JetpackUsage.html#a1718292bf0cda6b7c3dc4f5c63206d7e',1,'Jetpack::JetpackUsage']]]
 ];

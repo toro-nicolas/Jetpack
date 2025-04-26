@@ -35,6 +35,7 @@ DESCRIPTION:
         -p <port>       The port number on which the server socket listens
         -m <map>        The path of the map file
         -d              Enable debug mode
+        -in             Enable infinite mode
         --help          Display this help message
 
 CREDITS:

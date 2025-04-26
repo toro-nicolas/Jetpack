@@ -7,13 +7,19 @@
 /**
  * @file Pseudo.cpp
  * @brief The Pseudo.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "client/Client.hpp"
+#include "utils/Jetpack.hpp"
 
 namespace Jetpack {
-	void Client::handleCommandPseudo(const int &code, const std::string &message)
+    /**
+     * @brief Handles the response of the command PSEUDO
+     * @param code The command code
+     * @param message The message to handle
+     */
+	void Client::handleCommandPseudo(const int &code, UNUSED const std::string &message)
 	{
 		DEBUG << "Handle command PSEUDO";
         if (code != CODE_OK + CODE_PERSONNAL) {

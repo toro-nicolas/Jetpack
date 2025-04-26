@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../classJetpack_1_1Logs_1_1Debug.html#a4f1b0f494a080b4dabdd6d86bcfdebab',1,'Jetpack::Logs::Debug::operator&lt;&lt;(const T &amp;message)'],['../classJetpack_1_1Logs_1_1Debug.html#a8f6afb56155f7c6bdafdd96113cde005',1,'Jetpack::Logs::Debug::operator&lt;&lt;(std::ostream &amp;(*pf)(std::ostream &amp;))'],['../classJetpack_1_1Logs_1_1Error.html#a559669ad01e2f78cb74203e0a116a8cd',1,'Jetpack::Logs::Error::operator&lt;&lt;(const T &amp;message)'],['../classJetpack_1_1Logs_1_1Error.html#a11c5115e24b8afa9fde10d9a4ae311f4',1,'Jetpack::Logs::Error::operator&lt;&lt;(std::ostream &amp;(*pf)(std::ostream &amp;))'],['../classJetpack_1_1Logs_1_1Warning.html#a3aee7579ea44b4fc2790305ccaa25d47',1,'Jetpack::Logs::Warning::operator&lt;&lt;(const T &amp;message)'],['../classJetpack_1_1Logs_1_1Warning.html#a2264ba2e4d265063101a2378d478a0be',1,'Jetpack::Logs::Warning::operator&lt;&lt;(std::ostream &amp;(*pf)(std::ostream &amp;))']]],
-  ['operator_3d_1',['operator=',['../classJetpack_1_1Client.html#a2c6ae4a6df7fdf93ccf1ff86f52ce441',1,'Jetpack::Client']]]
+  ['isalive_0',['isAlive',['../classJetpack_1_1Player.html#aa7f8b4b24bf07266435388130d880785',1,'Jetpack::Player::isAlive()'],['../classJetpack_1_1Server_1_1Client.html#aa7f8b4b24bf07266435388130d880785',1,'Jetpack::Server::Client::isAlive()']]],
+  ['iscollected_1',['isCollected',['../classJetpack_1_1Coin.html#ae934364f0313f54297f1599c83d80954',1,'Jetpack::Coin']]],
+  ['isplaying_2',['isPlaying',['../classJetpack_1_1Animation.html#a389ad71786b00ae81f69060f153509d2',1,'Jetpack::Animation']]],
+  ['isvisible_3',['isVisible',['../classJetpack_1_1Player.html#a1ef039bd1835c884308e73f32c6b3859',1,'Jetpack::Player']]]
 ];

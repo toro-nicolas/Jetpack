@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project documentation: JetpackStop Class Reference</title>
+<title>Jetpack documentation: JetpackStop Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Project documentation<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Jetpack documentation<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -97,10 +97,16 @@ $(function(){initNavTree('classJetpack_1_1JetpackStop.html',''); initResizable(t
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle"><div class="title">JetpackStop Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>An exception class for stopping the Jetpack.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Exception_8hpp_source.html">Exception.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for JetpackStop:</div>
 <div class="dyncontent">
@@ -110,15 +116,90 @@ Inheritance diagram for JetpackStop:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a006ea2ae5d85784c6327b49bf2fcef2e" id="r_a006ea2ae5d85784c6327b49bf2fcef2e"><td class="memItemLeft" align="right" valign="top"><a id="a006ea2ae5d85784c6327b49bf2fcef2e" name="a006ea2ae5d85784c6327b49bf2fcef2e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>JetpackStop</b> (const std::string &amp;message)</td></tr>
+<tr class="memitem:a006ea2ae5d85784c6327b49bf2fcef2e" id="r_a006ea2ae5d85784c6327b49bf2fcef2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a006ea2ae5d85784c6327b49bf2fcef2e">JetpackStop</a> (const std::string &amp;message)</td></tr>
+<tr class="memdesc:a006ea2ae5d85784c6327b49bf2fcef2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classJetpack_1_1JetpackStop.html" title="An exception class for stopping the Jetpack.">JetpackStop</a> class.  <br /></td></tr>
 <tr class="separator:a006ea2ae5d85784c6327b49bf2fcef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf843cbb29dec939d0731e491bab6f70" id="r_abf843cbb29dec939d0731e491bab6f70"><td class="memItemLeft" align="right" valign="top"><a id="abf843cbb29dec939d0731e491bab6f70" name="abf843cbb29dec939d0731e491bab6f70"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept override</td></tr>
+<tr class="memitem:a99ad9625d41d13a91cd2b045e8d1ef16" id="r_a99ad9625d41d13a91cd2b045e8d1ef16"><td class="memItemLeft" align="right" valign="top"><a id="a99ad9625d41d13a91cd2b045e8d1ef16" name="a99ad9625d41d13a91cd2b045e8d1ef16"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~JetpackStop</b> () override=default</td></tr>
+<tr class="memdesc:a99ad9625d41d13a91cd2b045e8d1ef16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classJetpack_1_1JetpackStop.html" title="An exception class for stopping the Jetpack.">JetpackStop</a> class. <br /></td></tr>
+<tr class="separator:a99ad9625d41d13a91cd2b045e8d1ef16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf843cbb29dec939d0731e491bab6f70" id="r_abf843cbb29dec939d0731e491bab6f70"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf843cbb29dec939d0731e491bab6f70">what</a> () const noexcept override</td></tr>
+<tr class="memdesc:abf843cbb29dec939d0731e491bab6f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the message of the exception.  <br /></td></tr>
 <tr class="separator:abf843cbb29dec939d0731e491bab6f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad1585019025491c93a622c07a3a2130b" id="r_ad1585019025491c93a622c07a3a2130b"><td class="memItemLeft" align="right" valign="top"><a id="ad1585019025491c93a622c07a3a2130b" name="ad1585019025491c93a622c07a3a2130b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_message</b></td></tr>
+<tr class="separator:ad1585019025491c93a622c07a3a2130b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An exception class for stopping the Jetpack. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a006ea2ae5d85784c6327b49bf2fcef2e" name="a006ea2ae5d85784c6327b49bf2fcef2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006ea2ae5d85784c6327b49bf2fcef2e">&#9670;&#160;</a></span>JetpackStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classJetpack_1_1JetpackStop.html">JetpackStop</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="classJetpack_1_1JetpackStop.html" title="An exception class for stopping the Jetpack.">JetpackStop</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message of the <a class="el" href="#abf843cbb29dec939d0731e491bab6f70" title="Gets the message of the exception.">what()</a> function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf843cbb29dec939d0731e491bab6f70" name="abf843cbb29dec939d0731e491bab6f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf843cbb29dec939d0731e491bab6f70">&#9670;&#160;</a></span>what()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * what </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the message of the exception. </p>
+<dl class="section return"><dt>Returns</dt><dd>The message of the exception </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/utils/<a class="el" href="include_2utils_2Exception_8hpp_source.html">Exception.hpp</a></li>
+<li>include/utils/<a class="el" href="Exception_8hpp_source.html">Exception.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

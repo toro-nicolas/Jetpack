@@ -1,10 +1,24 @@
 var searchData=
 [
-  ['handlecommandclientsnb_0',['handleCommandClientsNb',['../classJetpack_1_1Client.html#a1313dede023f991dabd13fef343e2c8c',1,'Jetpack::Client']]],
-  ['handlecommandclientspositions_1',['handleCommandClientsPositions',['../classJetpack_1_1Client.html#aeab93ab4d4d9e2cdd7a3bd2fee2b1a09',1,'Jetpack::Client']]],
-  ['handlecommandclientsstats_2',['handleCommandClientsStats',['../classJetpack_1_1Client.html#aa93f7664fa4b95fe3a1fb86ae69425c1',1,'Jetpack::Client']]],
-  ['handlecommandid_3',['handleCommandId',['../classJetpack_1_1Client.html#a0939e0d3a0e95f6254181c00c37f26a6',1,'Jetpack::Client']]],
-  ['handlecommandmap_4',['handleCommandMap',['../classJetpack_1_1Client.html#a3f98bb9ba2dfc2bbaee494bf9e9b4675',1,'Jetpack::Client']]],
-  ['handlecommandmove_5',['handleCommandMove',['../classJetpack_1_1Client.html#a6a9a0272bf2770b263ea88720efec41a',1,'Jetpack::Client']]],
-  ['handlecommandpseudo_6',['handleCommandPseudo',['../classJetpack_1_1Client.html#abefc63b92421511610cfa38479891421',1,'Jetpack::Client']]]
+  ['generate_5fmap_0',['generate_map',['../classmap_1_1MapGenerator.html#a34aeb57ca969964c0221d669d868cab9',1,'map::MapGenerator']]],
+  ['getanimation_1',['getAnimation',['../classJetpack_1_1Player.html#a9d19dfe7177e6a7df6165149962ede3a',1,'Jetpack::Player']]],
+  ['getclientaddr_2',['getClientAddr',['../classJetpack_1_1Server_1_1Client.html#a66887d8b97559af53ea8cc080c0ddf5f',1,'Jetpack::Server::Client']]],
+  ['getcoinslist_3',['getCoinsList',['../classJetpack_1_1Server_1_1Client.html#ad46df90cf2f3817d523e5a318841c4d2',1,'Jetpack::Server::Client']]],
+  ['getcurrentanimationname_4',['getCurrentAnimationName',['../classJetpack_1_1Animation.html#a52212e9d00c9b798541044ced234f343',1,'Jetpack::Animation']]],
+  ['getid_5',['getId',['../classJetpack_1_1Player.html#ab85c5e66ff2d8362a98a83b45ae9a51f',1,'Jetpack::Player']]],
+  ['getjetpackresponse_6',['getJetpackResponse',['../classJetpack_1_1Client.html#ac4db246d8cc9cad58e93d41fea8595e6',1,'Jetpack::Client']]],
+  ['getlocaltime_7',['getLocalTime',['../classJetpack_1_1Logs_1_1Time.html#a71c629db07d7e0d09c4f1a2dfac18430',1,'Jetpack::Logs::Time']]],
+  ['getnextcommand_8',['getNextCommand',['../classJetpack_1_1Server_1_1Client.html#a2f31c4c059df9217eea5dfce132df17d',1,'Jetpack::Server::Client']]],
+  ['getplayerstate_9',['getPlayerState',['../classJetpack_1_1Player.html#ae920a44c5769da9005268df2b4c98d7d',1,'Jetpack::Player::getPlayerState()'],['../classJetpack_1_1Trap.html#ae920a44c5769da9005268df2b4c98d7d',1,'Jetpack::Trap::getPlayerState()']]],
+  ['getposition_10',['getPosition',['../classJetpack_1_1Coin.html#adf68cea6511cb8b350122c9faa4d2818',1,'Jetpack::Coin::getPosition()'],['../classJetpack_1_1Player.html#adf68cea6511cb8b350122c9faa4d2818',1,'Jetpack::Player::getPosition()'],['../classJetpack_1_1Trap.html#adf68cea6511cb8b350122c9faa4d2818',1,'Jetpack::Trap::getPosition()'],['../classJetpack_1_1Server_1_1Client.html#a98f950b87d87f87c04050e064e260c24',1,'Jetpack::Server::Client::getPosition()']]],
+  ['getpseudo_11',['getPseudo',['../classJetpack_1_1Player.html#a2ad5ad2b28132caa9332307ce459aee1',1,'Jetpack::Player::getPseudo()'],['../classJetpack_1_1Server_1_1Client.html#a2ad5ad2b28132caa9332307ce459aee1',1,'Jetpack::Server::Client::getPseudo()']]],
+  ['getpwd_12',['getPwd',['../classJetpack_1_1Cwd.html#aca3d2463eb65e8dfcf43381b43a7a0b4',1,'Jetpack::Cwd']]],
+  ['getresponse_13',['getResponse',['../classJetpack_1_1Client.html#a77a1f57eacc0723c19f8e9587d565b98',1,'Jetpack::Client']]],
+  ['getscore_14',['getScore',['../classJetpack_1_1Player.html#a0f11a4377343a2b426f5572b183331b1',1,'Jetpack::Player::getScore()'],['../classJetpack_1_1Server_1_1Client.html#a0f11a4377343a2b426f5572b183331b1',1,'Jetpack::Server::Client::getScore()']]],
+  ['getsocket_15',['getSocket',['../classJetpack_1_1Socket.html#a5ea4d39068a680efd1c33c55132c0ef7',1,'Jetpack::Socket']]],
+  ['getsocketfd_16',['getSocketFd',['../classJetpack_1_1Server_1_1Client.html#acebe09b31f4e134289e6e1c0f8d7dad5',1,'Jetpack::Server::Client']]],
+  ['getsound_17',['getSound',['../classJetpack_1_1Trap.html#a930fcfa2533df09b313a07277b775c5f',1,'Jetpack::Trap']]],
+  ['getspeed_18',['getSpeed',['../classJetpack_1_1Server_1_1Client.html#a6356c215e72ced0f05cdf5516ba808ad',1,'Jetpack::Server::Client']]],
+  ['getsprite_19',['getSprite',['../classJetpack_1_1Trap.html#a5adf5380cefa01ecfe918e482a19bbf0',1,'Jetpack::Trap']]],
+  ['gettexturerect_20',['getTextureRect',['../classJetpack_1_1Animation.html#a371f939703a387a3d3705cc831a05454',1,'Jetpack::Animation']]]
 ];

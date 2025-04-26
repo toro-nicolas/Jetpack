@@ -13,6 +13,12 @@
 #include "utils/Jetpack.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Converts a string to a vector of strings using the specified delimiters
+     * @param str The string to convert
+     * @param delimiters The delimiters to use for splitting the string
+     * @return A vector of strings
+     */
 	std::vector<std::string> stringToVector(std::string str, std::string delimiters)
 	{
 		std::vector<std::string> array;
@@ -28,6 +34,12 @@ namespace Jetpack {
 		return array;
 	}
 
+    /**
+     * @brief Closes the jetpack
+     * @note This function is a signal handler for SIGINT
+     * @param signal The signal to handle
+     * @throw JetpackStop if the jetpack is closed
+     */
 	void closeJetpack(UNUSED int signal)
 	{
         DEBUG << "Close jetpack";

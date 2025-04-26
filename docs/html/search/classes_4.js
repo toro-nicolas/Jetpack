@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ftperror_0',['FtpError',['../classFtp_1_1FtpError.html',1,'Ftp']]],
-  ['ftpstop_1',['FtpStop',['../classFtp_1_1FtpStop.html',1,'Ftp']]],
-  ['ftpusage_2',['FtpUsage',['../classFtp_1_1FtpUsage.html',1,'Ftp']]]
+  ['jetpackerror_0',['JetpackError',['../classJetpack_1_1JetpackError.html',1,'Jetpack']]],
+  ['jetpackstop_1',['JetpackStop',['../classJetpack_1_1JetpackStop.html',1,'Jetpack']]],
+  ['jetpackusage_2',['JetpackUsage',['../classJetpack_1_1JetpackUsage.html',1,'Jetpack']]]
 ];

@@ -14,7 +14,7 @@
 	#define FTP_HPP_
 
 	#define UNUSED __attribute__((unused))
-	#define ENDL "\r\n"
+	#define ENDL "\n"
 	#define MAX_CLIENTS 100
 	#define MAX_RESPONSE_SIZE 1024
 
@@ -22,10 +22,18 @@
     #include "utils/Cwd.hpp"
 
 namespace Jetpack {
-    #define UPDATE_VAR(mutex) std::lock_guard<std::mutex> lock(mutex);
+    #define TRAP_LIST "elm"
+
+    /* Threads */
+
+    //#define UPDATE_VAR(mutex) std::lock_guard<std::mutex> lock(mutex);
     // Manual lock and unlock
     //std::unique_lock<std::mutex> lock(mutex);
     //lock.unlock();
+
+
+
+    /* Protocol */
 
 	#define CODE_OK 200
 	#define CODE_ERROR 500
@@ -57,7 +65,24 @@ namespace Jetpack {
         "CLIENTS_POSITIONS"
     };
 
+
+
+    /* Global functions */
+
+    /**
+     * @brief Closes the jetpack client
+     * @note This function is a signal handler for SIGINT
+     * @param signal The signal to handle
+     * @throw JetpackStop if the jetpack is closed
+     */
 	void closeJetpack(int signal);
+
+    /**
+     * @brief Converts a string to a vector of strings
+     * @param str The string to convert
+     * @param delimiters The delimiters to use
+     * @return A vector of strings
+     */
 	std::vector<std::string> stringToVector(std::string str, std::string delimiters);
 }
 

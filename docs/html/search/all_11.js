@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['table_20of_20contents_20📑_0',['Table of contents 📑',['../md_README.html#autotoc_md19',1,'']]],
-  ['time_1',['Time',['../classJetpack_1_1Logs_1_1Time.html',1,'Jetpack::Logs']]],
-  ['type_2ecpp_2',['TYPE.cpp',['../client_2src_2server_2TYPE_8cpp.html',1,'(Global Namespace)'],['../server_2src_2server_2TYPE_8cpp.html',1,'(Global Namespace)']]]
+  ['warning_0',['Warning',['../classJetpack_1_1Logs_1_1Warning.html',1,'Warning'],['../classJetpack_1_1Logs_1_1Warning.html#aff4f00f5cf9a7d4daddef1a42ac8ddb1',1,'Jetpack::Logs::Warning::Warning()']]],
+  ['what_1',['what',['../classJetpack_1_1JetpackStop.html#abf843cbb29dec939d0731e491bab6f70',1,'Jetpack::JetpackStop::what()'],['../classJetpack_1_1JetpackError.html#abf843cbb29dec939d0731e491bab6f70',1,'Jetpack::JetpackError::what()']]]
 ];

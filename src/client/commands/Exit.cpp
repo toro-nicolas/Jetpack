@@ -7,12 +7,16 @@
 /**
  * @file Exit.cpp
  * @brief The Exit.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "client/Client.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Executes the exit command
+     * @param command The command to execute
+     */
     void Client::executeExit(std::vector<std::string> &command)
     {
         DEBUG << "Execute EXIT";

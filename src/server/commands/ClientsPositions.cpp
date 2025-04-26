@@ -7,12 +7,17 @@
 /**
  * @file ClientsPositions.cpp
  * @brief The ClientsPositions.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "server/ServerClient.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Execute the clients positions command
+     * @param client_fd The file descriptor of the client
+     * @param command The command to execute
+     */
     void Server::executeClientsPositions(int client_fd, std::vector<std::string> &command)
     {
         std::string positions;

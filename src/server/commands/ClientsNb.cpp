@@ -7,12 +7,17 @@
 /**
  * @file ClientsNb.cpp
  * @brief The ClientsNb.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "server/Server.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Execute the clients nb command
+     * @param client_fd The file descriptor of the client
+     * @param command The command to execute
+     */
     void Server::executeClientsNb(int client_fd, std::vector<std::string> &command)
     {
         DEBUG << "Execute clients nb";

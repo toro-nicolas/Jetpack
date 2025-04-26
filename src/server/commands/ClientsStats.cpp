@@ -7,12 +7,17 @@
 /**
  * @file ClientsStats.cpp
  * @brief The ClientsStats.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "server/ServerClient.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Execute the clients stats command
+     * @param client_fd The file descriptor of the client
+     * @param command The command to execute
+     */
     void Server::executeClientsStats(int client_fd, std::vector<std::string> &command)
     {
         DEBUG << "Execute clients Stats";

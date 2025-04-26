@@ -1,7 +1,16 @@
 var searchData=
 [
-  ['of_20contents_20📑_0',['Table of contents 📑',['../md_README.html#autotoc_md19',1,'']]],
-  ['operator_3c_3c_1',['operator&lt;&lt;',['../classJetpack_1_1Logs_1_1Debug.html#a4f1b0f494a080b4dabdd6d86bcfdebab',1,'Jetpack::Logs::Debug::operator&lt;&lt;(const T &amp;message)'],['../classJetpack_1_1Logs_1_1Debug.html#a8f6afb56155f7c6bdafdd96113cde005',1,'Jetpack::Logs::Debug::operator&lt;&lt;(std::ostream &amp;(*pf)(std::ostream &amp;))'],['../classJetpack_1_1Logs_1_1Error.html#a559669ad01e2f78cb74203e0a116a8cd',1,'Jetpack::Logs::Error::operator&lt;&lt;(const T &amp;message)'],['../classJetpack_1_1Logs_1_1Error.html#a11c5115e24b8afa9fde10d9a4ae311f4',1,'Jetpack::Logs::Error::operator&lt;&lt;(std::ostream &amp;(*pf)(std::ostream &amp;))'],['../classJetpack_1_1Logs_1_1Warning.html#a3aee7579ea44b4fc2790305ccaa25d47',1,'Jetpack::Logs::Warning::operator&lt;&lt;(const T &amp;message)'],['../classJetpack_1_1Logs_1_1Warning.html#a2264ba2e4d265063101a2378d478a0be',1,'Jetpack::Logs::Warning::operator&lt;&lt;(std::ostream &amp;(*pf)(std::ostream &amp;))']]],
-  ['operator_3d_2',['operator=',['../classJetpack_1_1Client.html#a2c6ae4a6df7fdf93ccf1ff86f52ce441',1,'Jetpack::Client']]],
-  ['overview_3',['Overview',['../md_map__documentation.html#autotoc_md1',1,'']]]
+  ['pause_0',['pause',['../classJetpack_1_1Animation.html#a7167f5c196fc5e167bfabde1a730e81d',1,'Jetpack::Animation']]],
+  ['personal_20client_20cmd_1',['🎮 PERSONAL CLIENT CMD',['../md_protocol__documentation__fr.html#autotoc_md17',1,'']]],
+  ['personal_20client_20commands_2',['🎮 PERSONAL CLIENT COMMANDS',['../md_protocol__documentation__en.html#autotoc_md10',1,'']]],
+  ['play_3',['play',['../classJetpack_1_1Animation.html#a6d58098c6cf63c241ed03bc797256bb1',1,'Jetpack::Animation']]],
+  ['player_4',['Player',['../classJetpack_1_1Player.html',1,'Player'],['../classJetpack_1_1Player.html#a4f18a0d1c36d22344fde30c6afd6a9fc',1,'Jetpack::Player::Player(std::size_t id, sf::Vector2u textureSize)'],['../classJetpack_1_1Player.html#acaac0dee273497eeb4bc1d92d7ea0b6e',1,'Jetpack::Player::Player(const Player &amp;)=delete']]],
+  ['player_2ecpp_5',['Player.cpp',['../Player_8cpp.html',1,'']]],
+  ['player_2ehpp_6',['Player.hpp',['../Player_8hpp.html',1,'']]],
+  ['point_7',['point',['../classJetpack_1_1Logs_1_1Debug.html#a7be4b8c3058898440d39454d1e36596e',1,'Jetpack::Logs::Debug']]],
+  ['positionhash_8',['PositionHash',['../classJetpack_1_1PositionHash.html',1,'Jetpack']]],
+  ['positionhash_2ecpp_9',['PositionHash.cpp',['../PositionHash_8cpp.html',1,'']]],
+  ['positionhash_2ehpp_10',['PositionHash.hpp',['../PositionHash_8hpp.html',1,'']]],
+  ['protocol_20documentation_11',['Protocol Documentation',['../md_protocol__documentation__en.html',1,'Jetpack  Protocol Documentation'],['../md_protocol__documentation__fr.html',1,'Jetpack Protocol Documentation']]],
+  ['pseudo_2ecpp_12',['Pseudo.cpp',['../client_2handlers_2Pseudo_8cpp.html',1,'(Global Namespace)'],['../server_2commands_2Pseudo_8cpp.html',1,'(Global Namespace)']]]
 ];

@@ -7,7 +7,7 @@
 /**
  * @file Coin.cpp
  * @brief The Coin.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "client/Coin.hpp"
@@ -32,7 +32,7 @@ namespace Jetpack {
     }
 
     /**
-     * @brief Get the position of the coin
+     * @brief Gets the position of the coin
      * @return The position of the coin
      */
     const std::array<float, 2> &Coin::getPosition() const
@@ -41,7 +41,7 @@ namespace Jetpack {
     }
 
     /**
-     * @brief Get the collected status of the coin
+     * @brief Gets the collected status of the coin
      * @return The collected status of the coin
      */
     const bool &Coin::isCollected() const

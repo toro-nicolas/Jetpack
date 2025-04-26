@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project documentation: src/utils/Jetpack.cpp File Reference</title>
+<title>Jetpack documentation: src/utils/Jetpack.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Project documentation<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Jetpack documentation<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -108,17 +108,90 @@ $(function(){initNavTree('Jetpack_8cpp.html',''); initResizable(true); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa7532c4c6100f7d8ee39e322bc3be023" id="r_aa7532c4c6100f7d8ee39e322bc3be023"><td class="memItemLeft" align="right" valign="top"><a id="aa7532c4c6100f7d8ee39e322bc3be023" name="aa7532c4c6100f7d8ee39e322bc3be023"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stringToVector</b> (std::string str, std::string delimiters)</td></tr>
+<tr class="memitem:aa7532c4c6100f7d8ee39e322bc3be023" id="r_aa7532c4c6100f7d8ee39e322bc3be023"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Jetpack_8hpp.html#aa7532c4c6100f7d8ee39e322bc3be023">stringToVector</a> (std::string str, std::string delimiters)</td></tr>
+<tr class="memdesc:aa7532c4c6100f7d8ee39e322bc3be023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string to a vector of strings.  <br /></td></tr>
 <tr class="separator:aa7532c4c6100f7d8ee39e322bc3be023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa87f6c099b8426357cb287e9cf2d571d" id="r_aa87f6c099b8426357cb287e9cf2d571d"><td class="memItemLeft" align="right" valign="top"><a id="aa87f6c099b8426357cb287e9cf2d571d" name="aa87f6c099b8426357cb287e9cf2d571d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeJetpack</b> (UNUSED int signal)</td></tr>
+<tr class="memitem:aa87f6c099b8426357cb287e9cf2d571d" id="r_aa87f6c099b8426357cb287e9cf2d571d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa87f6c099b8426357cb287e9cf2d571d">closeJetpack</a> (UNUSED int signal)</td></tr>
+<tr class="memdesc:aa87f6c099b8426357cb287e9cf2d571d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the jetpack.  <br /></td></tr>
 <tr class="separator:aa87f6c099b8426357cb287e9cf2d571d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="Jetpack_8cpp.html" title="The Jetpack.cpp.">Jetpack.cpp</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="aa87f6c099b8426357cb287e9cf2d571d" name="aa87f6c099b8426357cb287e9cf2d571d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87f6c099b8426357cb287e9cf2d571d">&#9670;&#160;</a></span>closeJetpack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void closeJetpack </td>
+          <td>(</td>
+          <td class="paramtype">UNUSED int</td>          <td class="paramname"><span class="paramname"><em>signal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Closes the jetpack. </p>
+<dl class="section note"><dt>Note</dt><dd>This function is a signal handler for SIGINT </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>The signal to handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">JetpackStop</td><td>if the jetpack is closed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7532c4c6100f7d8ee39e322bc3be023" name="aa7532c4c6100f7d8ee39e322bc3be023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7532c4c6100f7d8ee39e322bc3be023">&#9670;&#160;</a></span>stringToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; stringToVector </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>delimiters</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a string to a vector of strings. </p>
+<p>Converts a string to a vector of strings using the specified delimiters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to convert </td></tr>
+    <tr><td class="paramname">delimiters</td><td>The delimiters to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of strings</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to convert </td></tr>
+    <tr><td class="paramname">delimiters</td><td>The delimiters to use for splitting the string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of strings </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

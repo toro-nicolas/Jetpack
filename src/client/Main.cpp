@@ -12,6 +12,9 @@
 
 #include "client/Client.hpp"
 
+/**
+ * @brief Display the help message
+ */
 void display_help()
 {
     std::cout << "USAGE: ./jetpack_client -h <ip> -p <port> [-d]" << std::endl << std::endl
@@ -25,6 +28,12 @@ void display_help()
         << "\tEPITECH Nice 2025" << std::endl;
 }
 
+/**
+ * @brief Main function
+ * @param ac The number of arguments
+ * @param av The arguments
+ * @return 0 on success, 84 on failure
+ */
 int main(int ac, char **av)
 {
 	try {

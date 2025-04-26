@@ -17,16 +17,34 @@
     #include "utils/Logs.hpp"
 
 namespace Jetpack {
+    /**
+     * @class Cwd
+     * @brief An encapsulation of the current working directory (CWD)
+     */
     class Cwd
     {
         public:
+            /**
+             * @brief Constructor for Cwd class
+             * @note This constructor gets the current working directory
+             * @throw JetpackError if getcwd fails
+             */
             Cwd();
+            /**
+             * @brief Deleted copy constructor
+             */
             ~Cwd();
 
+
+
+            /**
+             * @brief Gets the current working directory
+             * @return The current working directory
+             */
             std::string getPwd() const;
 
         private:
-            std::string _pwd;
+            std::string _pwd; /* Current working directory */
     };
 }
 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project documentation: include/client/Coin.hpp Source File</title>
+<title>Jetpack documentation: include/client/Coin.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Project documentation<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Jetpack documentation<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -111,37 +111,40 @@ $(function(){initNavTree('Coin_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    #include &quot;<a class="code" href="Jetpack_8hpp.html">utils/Jetpack.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>Jetpack {</div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classJetpack_1_1Coin.html">   19</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classJetpack_1_1Coin.html">Coin</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_function" href="classJetpack_1_1Coin.html#a2ec0dfc6a0c91360a1448045b2f6c8b2">Coin</a>(std::array&lt;float, 2&gt; position = {0, 0});</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classJetpack_1_1Coin.html">   23</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classJetpack_1_1Coin.html">Coin</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="comment">/* Constructor and destructor */</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_function" href="classJetpack_1_1Coin.html#a7e13807ff7dd56a525d776caab74ba26">~Coin</a>();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">const</span> std::array&lt;float, 2&gt; &amp;<a class="code hl_function" href="classJetpack_1_1Coin.html#adf68cea6511cb8b350122c9faa4d2818">getPosition</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;<a class="code hl_function" href="classJetpack_1_1Coin.html#ae934364f0313f54297f1599c83d80954">isCollected</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classJetpack_1_1Coin.html#a03378419a2d521255a23a6f35988f861">setCollected</a>(<span class="keywordtype">bool</span> collected);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            std::array&lt;float, 2&gt; _position; <span class="comment">/* Position of the coin */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordtype">bool</span> _collected = <span class="keyword">false</span>; <span class="comment">/* If the coin is collected or not */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
-</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_function" href="classJetpack_1_1Coin.html#a2ec0dfc6a0c91360a1448045b2f6c8b2">Coin</a>(std::array&lt;float, 2&gt; position = {0, 0});</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_function" href="classJetpack_1_1Coin.html#a7e13807ff7dd56a525d776caab74ba26">~Coin</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="comment">/* Getter and Setter for coin information */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keyword">const</span> std::array&lt;float, 2&gt; &amp;<a class="code hl_function" href="classJetpack_1_1Coin.html#adf68cea6511cb8b350122c9faa4d2818">getPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;<a class="code hl_function" href="classJetpack_1_1Coin.html#ae934364f0313f54297f1599c83d80954">isCollected</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classJetpack_1_1Coin.html#a03378419a2d521255a23a6f35988f861">setCollected</a>(<span class="keywordtype">bool</span> collected);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">/* COIN_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            std::array&lt;float, 2&gt; _position; <span class="comment">/* Position of the coin */</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordtype">bool</span> _collected = <span class="keyword">false</span>; <span class="comment">/* The collected status of the coin */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    };</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">/* COIN_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aJetpack_8hpp_html"><div class="ttname"><a href="Jetpack_8hpp.html">Jetpack.hpp</a></div><div class="ttdoc">The Jetpack.hpp.</div></div>
-<div class="ttc" id="aclassJetpack_1_1Coin_html"><div class="ttname"><a href="classJetpack_1_1Coin.html">Jetpack::Coin</a></div><div class="ttdef"><b>Definition</b> Coin.hpp:20</div></div>
+<div class="ttc" id="aclassJetpack_1_1Coin_html"><div class="ttname"><a href="classJetpack_1_1Coin.html">Jetpack::Coin</a></div><div class="ttdoc">A class that represents a coin in the game.</div><div class="ttdef"><b>Definition</b> Coin.hpp:24</div></div>
 <div class="ttc" id="aclassJetpack_1_1Coin_html_a03378419a2d521255a23a6f35988f861"><div class="ttname"><a href="classJetpack_1_1Coin.html#a03378419a2d521255a23a6f35988f861">Jetpack::Coin::setCollected</a></div><div class="ttdeci">void setCollected(bool collected)</div><div class="ttdoc">Set the collected status of the coin.</div><div class="ttdef"><b>Definition</b> Coin.cpp:56</div></div>
 <div class="ttc" id="aclassJetpack_1_1Coin_html_a2ec0dfc6a0c91360a1448045b2f6c8b2"><div class="ttname"><a href="classJetpack_1_1Coin.html#a2ec0dfc6a0c91360a1448045b2f6c8b2">Jetpack::Coin::Coin</a></div><div class="ttdeci">Coin(std::array&lt; float, 2 &gt; position={0, 0})</div><div class="ttdoc">Constructor for Coin class.</div><div class="ttdef"><b>Definition</b> Coin.cpp:20</div></div>
 <div class="ttc" id="aclassJetpack_1_1Coin_html_a7e13807ff7dd56a525d776caab74ba26"><div class="ttname"><a href="classJetpack_1_1Coin.html#a7e13807ff7dd56a525d776caab74ba26">Jetpack::Coin::~Coin</a></div><div class="ttdeci">~Coin()</div><div class="ttdoc">Destructor for Coin class.</div><div class="ttdef"><b>Definition</b> Coin.cpp:29</div></div>
-<div class="ttc" id="aclassJetpack_1_1Coin_html_adf68cea6511cb8b350122c9faa4d2818"><div class="ttname"><a href="classJetpack_1_1Coin.html#adf68cea6511cb8b350122c9faa4d2818">Jetpack::Coin::getPosition</a></div><div class="ttdeci">const std::array&lt; float, 2 &gt; &amp; getPosition() const</div><div class="ttdoc">Get the position of the coin.</div><div class="ttdef"><b>Definition</b> Coin.cpp:38</div></div>
-<div class="ttc" id="aclassJetpack_1_1Coin_html_ae934364f0313f54297f1599c83d80954"><div class="ttname"><a href="classJetpack_1_1Coin.html#ae934364f0313f54297f1599c83d80954">Jetpack::Coin::isCollected</a></div><div class="ttdeci">const bool &amp; isCollected() const</div><div class="ttdoc">Get the collected status of the coin.</div><div class="ttdef"><b>Definition</b> Coin.cpp:47</div></div>
+<div class="ttc" id="aclassJetpack_1_1Coin_html_adf68cea6511cb8b350122c9faa4d2818"><div class="ttname"><a href="classJetpack_1_1Coin.html#adf68cea6511cb8b350122c9faa4d2818">Jetpack::Coin::getPosition</a></div><div class="ttdeci">const std::array&lt; float, 2 &gt; &amp; getPosition() const</div><div class="ttdoc">Gets the position of the coin.</div><div class="ttdef"><b>Definition</b> Coin.cpp:38</div></div>
+<div class="ttc" id="aclassJetpack_1_1Coin_html_ae934364f0313f54297f1599c83d80954"><div class="ttname"><a href="classJetpack_1_1Coin.html#ae934364f0313f54297f1599c83d80954">Jetpack::Coin::isCollected</a></div><div class="ttdeci">const bool &amp; isCollected() const</div><div class="ttdoc">Gets the collected status of the coin.</div><div class="ttdef"><b>Definition</b> Coin.cpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

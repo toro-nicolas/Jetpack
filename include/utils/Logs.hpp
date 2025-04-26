@@ -42,6 +42,7 @@
     #include <thread>
     #include <queue>
     #include <mutex>
+    #include <string_view>
 
     #define    RESET "\033[0m"
     #define    BLACK "\033[0;30m"
@@ -64,10 +65,15 @@
     #define UNUSED __attribute__((unused))
 
 namespace Jetpack::Logs {
+    /**
+     * @class Time
+     * @brief A class that represents the time
+     * @details This class is used to get the local time
+     */
     class Time {
         public:
             /**
-             * @brief Get the local time
+             * @brief Gets the local time
              * @return <b>std::string</b> The local time
              */
             static std::string getLocalTime();
@@ -79,6 +85,11 @@ namespace Jetpack::Logs {
 
 
 
+    /**
+     * @class Debug
+     * @brief A class for debugging
+     * @details This class is used to print debug messages
+     */
     class Debug {
         public:
             /**
@@ -127,6 +138,11 @@ namespace Jetpack::Logs {
 
 
 
+    /**
+     * @class Error
+     * @brief A class for errors
+     * @details This class is used to print error messages
+     */
     class Error {
         public:
             /**
@@ -163,6 +179,11 @@ namespace Jetpack::Logs {
 
 
 
+    /**
+     * @class Warning
+     * @brief A class for warnings
+     * @details This class is used to print warning messages
+     */
     class Warning {
         public:
             /**

@@ -13,6 +13,11 @@
 #include "utils/Cwd.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Constructor for Cwd class
+     * @note This constructor gets the current working directory
+     * @throw JetpackError if getcwd fails
+     */
     Cwd::Cwd()
     {
         char *tmp = nullptr;
@@ -20,17 +25,23 @@ namespace Jetpack {
         DEBUG << "Cwd creation";
         tmp = getcwd(nullptr, 0);
         if (tmp == nullptr)
-            throw JetpackError(
-                "Getcwd failed: " + std::string(strerror(errno)));
+            throw JetpackError("Getcwd failed: " + std::string(strerror(errno)));
         _pwd = tmp;
         free(tmp);
     }
 
+    /**
+     * @brief Deleted copy constructor
+     */
     Cwd::~Cwd()
     {
         DEBUG << "Cwd destruction";
     }
 
+    /**
+     * @brief Gets the current working directory
+     * @return The current working directory
+     */
     std::string Cwd::getPwd() const
     {
         return _pwd;

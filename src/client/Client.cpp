@@ -16,6 +16,11 @@ namespace Jetpack {
     bool Client::isRunning = false;
     std::mutex Client::isRunningMutex;
 
+    /**
+     * @brief Closes the client
+     * @note This function is a signal handler for SIGINT
+     * @param signal The signal to close the client
+     */
     void Client::closeJetpackClient(UNUSED int signal)
     {
         DEBUG << "Close client";
@@ -23,6 +28,13 @@ namespace Jetpack {
         isRunning = false;
     }
 
+    /**
+     * @brief Check the arguments passed to the client
+     * @param ac The number of arguments
+     * @param av The arguments
+     * @throw JetpackError If the arguments are invalid
+     * @throw JetpackUsage If the help flag is passed
+     */
 	void Client::_checkArgs(int ac, char **av)
 	{
 		DEBUG << "CheckArgs AC: " << ac;
@@ -54,6 +66,11 @@ namespace Jetpack {
 			throw JetpackError("Invalid port number: " + _port);
 	}
 
+    /**
+     * @brief Sends a command to the server
+     * @param fd The file descriptor of the socket
+     * @param command The command to send
+     */
     void Client::sendCommand(int fd, const std::vector<std::string> &command)
     {
         std::string commandStr;
@@ -71,6 +88,10 @@ namespace Jetpack {
         }
     }
 
+    /**
+     * @brief Receives a response from the server
+     * @return A pair containing the code and the message
+     */
     std::pair<int, std::string> Client::getResponse()
     {
         char tmp = 0;
@@ -104,7 +125,7 @@ namespace Jetpack {
                     index = 0;
             }
         }
-        while (!response.empty() && (response.back() == '\n' || response.back() == '\r'))
+        while (!response.empty() && response.back() == '\n')
             response.pop_back();
         DEBUG << response;
         if (response.size() >= 3)
@@ -114,6 +135,10 @@ namespace Jetpack {
         return std::make_pair(code, message);
     }
 
+    /**
+     * @brief Receives a response from the server
+     * @return A tuple containing the command ID, the code and the message
+     */
     Client::response_t Client::getJetpackResponse()
 	{
 		char tmp = 0;
@@ -148,7 +173,7 @@ namespace Jetpack {
 					index = 0;
 			}
 		}
-        while (!response.empty() && (response.back() == '\n' || response.back() == '\r'))
+        while (!response.empty() && response.back() == '\n')
             response.pop_back();
 		DEBUG << response;
         if (response.size() >= 2 && response[1] == ' ')
@@ -160,6 +185,10 @@ namespace Jetpack {
 		return std::make_tuple(cmd_id, code, message);
 	}
 
+    /**
+     * @brief Initializes the game information
+     * @throw JetpackError If the ID or MAP command fails
+     */
 	void Client::_initGameInformation()
 	{
 		response_t response;
@@ -180,12 +209,19 @@ namespace Jetpack {
         handleCommandMap(std::get<1>(response), std::get<2>(response));
 	}
 
+    /**
+     * @brief Initializes the commands of the client
+     */
 	void Client::_initCommands()
 	{
 		DEBUG << "Init commands";
 		_commands["exit"] = [this](std::vector<std::string> &command) { executeExit(command); };
 	}
 
+    /**
+     * @brief Initializes the client
+     * @throw JetpackError If the connection fails
+     */
 	void Client::_initClient()
 	{
 		DEBUG << "Init client: IP: " << _ip << " PORT: " << _port;
@@ -203,6 +239,11 @@ namespace Jetpack {
 		_initCommands();
 	}
 
+    /**
+     * @brief Constructor for Client class
+     * @param ac Number of command line arguments
+     * @param av Array of command line arguments
+     */
 	Client::Client(int ac, char **av)
 	{
 		DEBUG << "Client creation";
@@ -211,11 +252,17 @@ namespace Jetpack {
         _initSfml();
 	}
 
+    /**
+     * @brief Destructor for Client class
+     */
 	Client::~Client()
 	{
 		DEBUG << "Client destruction";
 	}
 
+    /**
+     * @brief Thread for handling user input
+     */
     void Client::_promptThread()
     {
         std::string line;
@@ -244,6 +291,9 @@ namespace Jetpack {
         }
     }
 
+    /**
+     * @brief Thread for handling communication with the server
+     */
     void Client::_communicationThread()
     {
         std::pair<int, std::string> response;
@@ -263,6 +313,10 @@ namespace Jetpack {
         }
     }
 
+    /**
+     * @brief Runs the client
+     * @note This function is the main loop of the client
+     */
 	void Client::run()
 	{
         if (write(STDOUT_FILENO, "Client run\n", 12))

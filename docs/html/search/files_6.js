@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['help_2ecpp_0',['HELP.cpp',['../client_2src_2client_2HELP_8cpp.html',1,'(Global Namespace)'],['../client_2src_2server_2HELP_8cpp.html',1,'(Global Namespace)'],['../server_2src_2server_2HELP_8cpp.html',1,'(Global Namespace)']]]
+  ['map_2ecpp_0',['Map.cpp',['../client_2handlers_2Map_8cpp.html',1,'(Global Namespace)'],['../server_2commands_2Map_8cpp.html',1,'(Global Namespace)']]],
+  ['move_2ecpp_1',['Move.cpp',['../client_2handlers_2Move_8cpp.html',1,'(Global Namespace)'],['../server_2commands_2Move_8cpp.html',1,'(Global Namespace)']]]
 ];

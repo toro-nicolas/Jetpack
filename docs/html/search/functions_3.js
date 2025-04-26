@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['error_0',['Error',['../classJetpack_1_1Logs_1_1Error.html#ad44d68bd128aad4f7135566427efbb5c',1,'Jetpack::Logs::Error']]],
-  ['executeexit_1',['executeExit',['../classJetpack_1_1Client.html#ad6a66fb6530cb0cb95c373781cfaa31c',1,'Jetpack::Client']]],
-  ['executepass_2',['executePASS',['../classFtp_1_1Server_1_1Command.html#a36dbcddccac268b9c094e5ee1d306289',1,'Ftp::Server::Command']]]
+  ['debug_0',['Debug',['../classJetpack_1_1Logs_1_1Debug.html#a4f5ac8d3cb60bf737f9c9234538f72c2',1,'Jetpack::Logs::Debug']]]
 ];

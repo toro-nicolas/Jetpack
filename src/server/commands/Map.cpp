@@ -7,12 +7,17 @@
 /**
  * @file Map.cpp
  * @brief The Map.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "server/Server.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Execute the map command
+     * @param client_fd The file descriptor of the client
+     * @param command The command to execute
+     */
     void Server::executeMap(int client_fd, std::vector<std::string> &command)
     {
         std::string map;

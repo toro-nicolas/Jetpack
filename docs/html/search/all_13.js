@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warning_0',['Warning',['../classJetpack_1_1Logs_1_1Warning.html',1,'Warning'],['../classJetpack_1_1Logs_1_1Warning.html#aff4f00f5cf9a7d4daddef1a42ac8ddb1',1,'Jetpack::Logs::Warning::Warning()']]]
+  ['⚔️_0',['Usage ⚔️',['../md_README.html#autotoc_md21',1,'']]]
 ];

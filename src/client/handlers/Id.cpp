@@ -7,12 +7,17 @@
 /**
  * @file Id.cpp
  * @brief The Id.cpp
- * @author Nicolas TORO
+ * @author Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO
  */
 
 #include "client/Client.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Handles the response of the command ID
+     * @param code The command code
+     * @param message The message to handle
+     */
 	void Client::handleCommandId(const int &code, const std::string &message)
 	{
 		DEBUG << "Handle command ID";

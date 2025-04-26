@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project documentation: include/utils/Jetpack.hpp File Reference</title>
+<title>Jetpack documentation: include/utils/Jetpack.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Project documentation<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Jetpack documentation<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>UNUSED</b>&#160;&#160;&#160;__attribute__((unused))</td></tr>
 <tr class="separator:addf5ec070e9499d36b7f2009ce736076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90dc3f3ee970394e0080300526390a84" id="r_a90dc3f3ee970394e0080300526390a84"><td class="memItemLeft" align="right" valign="top"><a id="a90dc3f3ee970394e0080300526390a84" name="a90dc3f3ee970394e0080300526390a84"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ENDL</b>&#160;&#160;&#160;&quot;\r\n&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ENDL</b>&#160;&#160;&#160;&quot;\n&quot;</td></tr>
 <tr class="separator:a90dc3f3ee970394e0080300526390a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a8f91f93d75a07f0ae45077db45b3eb" id="r_a0a8f91f93d75a07f0ae45077db45b3eb"><td class="memItemLeft" align="right" valign="top"><a id="a0a8f91f93d75a07f0ae45077db45b3eb" name="a0a8f91f93d75a07f0ae45077db45b3eb"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_CLIENTS</b>&#160;&#160;&#160;100</td></tr>
@@ -126,9 +126,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a836f11ea44075aa0ac768c646e40adaa" id="r_a836f11ea44075aa0ac768c646e40adaa"><td class="memItemLeft" align="right" valign="top"><a id="a836f11ea44075aa0ac768c646e40adaa" name="a836f11ea44075aa0ac768c646e40adaa"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RESPONSE_SIZE</b>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a836f11ea44075aa0ac768c646e40adaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab623b7f8a5f3cd02d1a371dd3c7087c" id="r_aab623b7f8a5f3cd02d1a371dd3c7087c"><td class="memItemLeft" align="right" valign="top"><a id="aab623b7f8a5f3cd02d1a371dd3c7087c" name="aab623b7f8a5f3cd02d1a371dd3c7087c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>UPDATE_VAR</b>(mutex)&#160;&#160;&#160;std::lock_guard&lt;std::mutex&gt; lock(mutex);</td></tr>
-<tr class="separator:aab623b7f8a5f3cd02d1a371dd3c7087c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e755a72a31b88e7b5b54fb8a7fe2b4" id="r_ac2e755a72a31b88e7b5b54fb8a7fe2b4"><td class="memItemLeft" align="right" valign="top"><a id="ac2e755a72a31b88e7b5b54fb8a7fe2b4" name="ac2e755a72a31b88e7b5b54fb8a7fe2b4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TRAP_LIST</b>&#160;&#160;&#160;&quot;elm&quot;</td></tr>
+<tr class="separator:ac2e755a72a31b88e7b5b54fb8a7fe2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d675d4cd796427a8b6790d5f54d93a" id="r_a71d675d4cd796427a8b6790d5f54d93a"><td class="memItemLeft" align="right" valign="top"><a id="a71d675d4cd796427a8b6790d5f54d93a" name="a71d675d4cd796427a8b6790d5f54d93a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CODE_OK</b>&#160;&#160;&#160;200</td></tr>
 <tr class="separator:a71d675d4cd796427a8b6790d5f54d93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,11 +159,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a54f470c7c0bb9a33caa1deed4d2adc6d" id="r_a54f470c7c0bb9a33caa1deed4d2adc6d"><td class="memItemLeft" align="right" valign="top"><a id="a54f470c7c0bb9a33caa1deed4d2adc6d" name="a54f470c7c0bb9a33caa1deed4d2adc6d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeJetpack</b> (int signal)</td></tr>
+<tr class="memitem:a54f470c7c0bb9a33caa1deed4d2adc6d" id="r_a54f470c7c0bb9a33caa1deed4d2adc6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54f470c7c0bb9a33caa1deed4d2adc6d">closeJetpack</a> (int signal)</td></tr>
+<tr class="memdesc:a54f470c7c0bb9a33caa1deed4d2adc6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the jetpack client.  <br /></td></tr>
 <tr class="separator:a54f470c7c0bb9a33caa1deed4d2adc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7532c4c6100f7d8ee39e322bc3be023" id="r_aa7532c4c6100f7d8ee39e322bc3be023"><td class="memItemLeft" align="right" valign="top"><a id="aa7532c4c6100f7d8ee39e322bc3be023" name="aa7532c4c6100f7d8ee39e322bc3be023"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stringToVector</b> (std::string str, std::string delimiters)</td></tr>
+<tr class="memitem:aa7532c4c6100f7d8ee39e322bc3be023" id="r_aa7532c4c6100f7d8ee39e322bc3be023"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7532c4c6100f7d8ee39e322bc3be023">stringToVector</a> (std::string str, std::string delimiters)</td></tr>
+<tr class="memdesc:aa7532c4c6100f7d8ee39e322bc3be023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string to a vector of strings.  <br /></td></tr>
 <tr class="separator:aa7532c4c6100f7d8ee39e322bc3be023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -174,7 +174,80 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="Jetpack_8hpp.html" title="The Jetpack.hpp.">Jetpack.hpp</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>Christophe VANDEVOIR, Guillaume LECOCQ and Nicolas TORO </dd></dl>
-</div><h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a54f470c7c0bb9a33caa1deed4d2adc6d" name="a54f470c7c0bb9a33caa1deed4d2adc6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f470c7c0bb9a33caa1deed4d2adc6d">&#9670;&#160;</a></span>closeJetpack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void closeJetpack </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>signal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Closes the jetpack client. </p>
+<dl class="section note"><dt>Note</dt><dd>This function is a signal handler for SIGINT </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signal</td><td>The signal to handle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">JetpackStop</td><td>if the jetpack is closed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7532c4c6100f7d8ee39e322bc3be023" name="aa7532c4c6100f7d8ee39e322bc3be023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7532c4c6100f7d8ee39e322bc3be023">&#9670;&#160;</a></span>stringToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; stringToVector </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>delimiters</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a string to a vector of strings. </p>
+<p>Converts a string to a vector of strings using the specified delimiters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to convert </td></tr>
+    <tr><td class="paramname">delimiters</td><td>The delimiters to use </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of strings</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The string to convert </td></tr>
+    <tr><td class="paramname">delimiters</td><td>The delimiters to use for splitting the string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector of strings </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a id="aa8bb5666f60700fda40618311d46258a" name="aa8bb5666f60700fda40618311d46258a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8bb5666f60700fda40618311d46258a">&#9670;&#160;</a></span>CMD_ID_STR</h2>
 

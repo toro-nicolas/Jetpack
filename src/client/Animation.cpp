@@ -8,6 +8,10 @@
 #include "client/Animation.hpp"
 
 namespace Jetpack {
+    /**
+     * @brief Constructor for Animation class
+     * @param textureSize Size of the texture (default is {0, 0})
+     */
 	Animation::Animation(sf::Vector2u textureSize)
 		: _textureSize(textureSize), _currentFrame(0), _timeAccumulator(0.0f),
 		_isPlaying(false), _flipX(false), _flipY(false)
@@ -15,16 +19,34 @@ namespace Jetpack {
 		DEBUG << "Animation created";
 	}
 
+    /**
+     * @brief Destructor for Animation class
+     */
     Animation::~Animation()
     {
 		DEBUG << "Animation destroyed";
     }
 
+    /**
+     * @brief Sets the texture size for the animation
+     * @param textureSize Size of the texture
+     */
 	void Animation::setTextureSize(sf::Vector2u textureSize)
 	{
 		_textureSize = textureSize;
 	}
 
+    /**
+     * @brief Adds an animation to the animation list
+     * @param name Name of the animation
+     * @param frameCount Number of frames in the animation
+     * @param frameSize Size of each frame
+     * @param startPosition Starting position of the animation in the sprite sheet
+     * @param fps Frames per second for the animation (default is 12.0f)
+     * @param loop Whether the animation should loop (default is true)
+     * @return True if the animation was added successfully
+     * and false otherwise
+     */
     bool Animation::addAnimation(const std::string& name,
 		int frameCount, sf::Vector2u frameSize,
         sf::Vector2u startPosition, float fps, bool loop)
@@ -45,6 +67,13 @@ namespace Jetpack {
         return true;
     }
 
+    /**
+     * @brief Sets the current animation
+     * @param name Name of the animation to set
+     * @param resetFrame Whether to start the animation from the beginning (default is true)
+     * @return True if the animation was set successfully
+     * and false otherwise
+     */
     bool Animation::setCurrentAnimation(const std::string& name, bool resetFrame)
     {
         auto it = _animations.find(name);
@@ -65,6 +94,10 @@ namespace Jetpack {
         return true;
     }
 
+    /**
+     * @brief Updates the animation based on elapsed time
+     * @param deltaTime Elapsed time since last update
+     */
     void Animation::update(float deltaTime)
     {
         if (!_isPlaying || _currentAnimationName.empty())
@@ -89,16 +122,25 @@ namespace Jetpack {
         }
     }
 
+    /**
+     * @brief Plays the current animation
+     */
     void Animation::play()
     {
         _isPlaying = true;
     }
 
+    /**
+     * @brief Pauses the current animation
+     */
     void Animation::pause()
     {
         _isPlaying = false;
     }
 
+    /**
+     * @brief Stops the current animation
+     */
     void Animation::stop()
     {
         _isPlaying = false;
@@ -107,16 +149,28 @@ namespace Jetpack {
         updateTextureRect();
     }
 
+    /**
+     * @brief Checks if the animation is playing
+     * @return True if the animation is playing
+     */
     bool Animation::isPlaying() const
     {
         return _isPlaying;
     }
 
+    /**
+     * @brief Gets the current animation name
+     * @return The current animation name
+     */
     std::string Animation::getCurrentAnimationName() const
     {
         return _currentAnimationName;
     }
 
+    /**
+     * @brief Sets whether the sprite should be flipped horizontally
+     * @param flip True to flip the sprite horizontally
+     */
     void Animation::setFlipX(bool flip)
     {
         if (_flipX != flip) {
@@ -125,6 +179,10 @@ namespace Jetpack {
         }
     }
 
+    /**
+     * @brief Sets whether the sprite should be flipped vertically
+     * @param flip True to flip the sprite vertically
+     */
     void Animation::setFlipY(bool flip)
     {
         if (_flipY != flip) {
@@ -133,6 +191,10 @@ namespace Jetpack {
         }
     }
 
+    /**
+     * @brief Updates the texture rectangle for the current frame
+     * @return The updated texture rectangle
+     */
     void Animation::updateTextureRect()
     {
         int row = 0;
@@ -172,6 +234,10 @@ namespace Jetpack {
 		_textureRect = rect;
     }
 
+    /**
+     * @brief Gets the texture rectangle for the current frame
+     * @return The texture rectangle for the current frame
+     */
 	const sf::IntRect& Animation::getTextureRect() const
 	{
 		return _textureRect;
